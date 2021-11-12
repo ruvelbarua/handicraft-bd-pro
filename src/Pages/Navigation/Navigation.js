@@ -14,13 +14,14 @@ import List from '@mui/material/List';
 import Divider from '@mui/material/Divider';
 import ListItem from '@mui/material/ListItem';
 import ListItemText from '@mui/material/ListItemText';
+import logo from '../../images/logo/logo2.png'
 
 export default function Navigation() {
     // <Box sx={{ flexGrow: 1 }}>
     const theme = useTheme()
     const useStyle = makeStyles({
         navItem: {
-            color: '#fff',
+            color: '#070C74',
             textDecoration: 'none'
         },
         navIcon: {
@@ -75,7 +76,7 @@ export default function Navigation() {
     return (
         <>
             <Box sx={{ flexGrow: 1 }}>
-                <AppBar position="static" sx={{ bgcolor: 'text.primary' }}>
+                <AppBar position="static" sx={{ bgcolor: '#E5ECF5' }}>
                     <Toolbar>
                         <IconButton
                             size="large"
@@ -88,8 +89,8 @@ export default function Navigation() {
                         >
                             <MenuIcon />
                         </IconButton>
-                        <Typography className={navLogo} variant="h6" component="div" sx={{ flexGrow: 1 }}>
-                            News
+                        <Typography className={navLogo} component="div" sx={{ flexGrow: 1 }}>
+                            <img src={logo} alt="" width="15%" />
                         </Typography>
                         <Box className={navItemContainer}>
                             <Link className={navItem} to="/"><Button color="inherit">
@@ -103,7 +104,7 @@ export default function Navigation() {
                             </Button></Link>
 
                         </Box>
-                        <Button color="inherit">Login</Button>
+                        <Button sx={{ color: '#C11611' }} color="inherit">Login</Button>
                     </Toolbar>
                 </AppBar>
             </Box>

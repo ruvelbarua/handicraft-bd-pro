@@ -9,9 +9,9 @@ import AddIcCallIcon from '@mui/icons-material/AddIcCall';
 
 const Footer = () => {
     return (
-        <div>
+        <div className="my-5">
             <Container>
-                <Grid container spacing={2} sx={{ alignItems: "start", background: "#053040", color: "#fff" }}>
+                <Grid container spacing={2} sx={{ textAlign: "center", background: "#2A1D1C", color: "#fff", width: "100%", height: 200 }}>
                     <Grid item xs={12} sm={12} md={4} lg={4}>
                         <Typography variant="h6">CONTACT US:</Typography>
                         <Typography variant="body1">Email: handicraftbd@gmail.com</Typography>
@@ -33,7 +33,7 @@ const Footer = () => {
                     </Grid>
                 </Grid>
             </Container>
-        </div >
+        </div>
     );
 };
 
