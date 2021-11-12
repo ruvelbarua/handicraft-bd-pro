@@ -13,17 +13,20 @@ import Services from './Pages/Home/Services/Services';
 import Navigation from './Pages/Navigation/Navigation';
 import Products from './Pages/Products/Products';
 import Service from './Pages/Home/Service/Service';
+import Footer from './Pages/Dashboard/Footer/Footer';
+import Header from './Pages/Dashboard/Header/Header';
 
 function App() {
   return (
     <div className="App">
       <Router>
-        <Navigation />
+        <Header />
         <Switch>
           <Route exact path="/" component={Home} />
           <Route exact path="/service" component={Service} />
           <Route exact path="/about" component={About} />
         </Switch>
+        <Footer />
       </Router>
 
     </div>
