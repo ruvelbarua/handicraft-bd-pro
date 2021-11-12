@@ -99,12 +99,17 @@ export default function Navigation() {
                             <Link className={navItem} to="/service"><Button color="inherit">
                                 SERVICE
                             </Button></Link>
+                            <Link className={navItem} to="/productOrder"><Button color="inherit">
+                                Product Order
+                            </Button></Link>
                             <Link className={navItem} to="/about"><Button color="inherit">
                                 ABOUT
                             </Button></Link>
-
                         </Box>
-                        <Button sx={{ color: '#C11611' }} color="inherit">Login</Button>
+                        <Link to="/">
+                            <Button sx={{ color: '#C11611' }} color="inherit">Login</Button>
+                        </Link>
+
                     </Toolbar>
                 </AppBar>
             </Box>
