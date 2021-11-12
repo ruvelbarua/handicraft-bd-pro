@@ -7,7 +7,7 @@ import Typography from '@mui/material/Typography';
 import { Button, CardActions } from '@mui/material';
 
 const Service = (props) => {
-    const { name, description, img } = props.service;
+    const { name, price, description, img } = props.service;
     return (
         <Grid item xs={4} sm={4} md={4}>
             <Card sx={{ minWidth: 275, border: 0, background: "#DEF3E0", boxShadow: 0 }}>
@@ -20,6 +20,9 @@ const Service = (props) => {
                 <CardContent>
                     <Typography variant="h5" component="div">
                         {name}
+                    </Typography>
+                    <Typography variant="h5" component="div">
+                        Price:{price}Tk/=
                     </Typography>
                     <Typography variant="body2" color="text.secondary">
                         {description}
