@@ -90,17 +90,14 @@ export default function Navigation() {
                             <MenuIcon />
                         </IconButton>
                         <Typography className={navLogo} component="div" sx={{ flexGrow: 1 }}>
-                            <img src={logo} alt="" width="15%" />
+                            <img src={logo} alt="" width="25%" />
                         </Typography>
                         <Box className={navItemContainer}>
                             <Link className={navItem} to="/"><Button color="inherit">
                                 HOME
                             </Button></Link>
                             <Link className={navItem} to="/service"><Button color="inherit">
-                                SERVICE
-                            </Button></Link>
-                            <Link className={navItem} to="/productOrder"><Button color="inherit">
-                                Product Order
+                                PRODUCTS
                             </Button></Link>
                             <Link className={navItem} to="/about"><Button color="inherit">
                                 ABOUT

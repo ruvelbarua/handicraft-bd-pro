@@ -14,7 +14,6 @@ import wallpic from '../../../images/wallpic.jpg';
 import Service from '../Service/Service';
 
 
-
 const services = [
     {
         name: 'BEDSHEET',
@@ -59,13 +58,13 @@ const Services = () => {
         <Box className="my-5" sx={{ flexGrow: 1 }}>
             <Container>
                 <Typography variant="h4" component="div" sx={{ fontWeight: 600, m: 5, color: "#070E94" }}>
-                    PRODUCTS INFORMATION
+                    OUR PRODUCTS
                 </Typography>
                 <Grid container spacing={{ xs: 2, md: 3 }} columns={{ xs: 4, sm: 8, md: 12 }}>
                     {
-                        services.map(service => <Service
-                            key={service.name}
-                            service={service}
+                        services.map(serviceitem => <Service
+                            key={serviceitem.name}
+                            serviceitem={serviceitem}
                         ></Service>)
                     }
                 </Grid>
