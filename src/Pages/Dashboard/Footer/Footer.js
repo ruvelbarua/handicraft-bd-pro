@@ -3,8 +3,21 @@ import React from 'react';
 import FacebookIcon from '@mui/icons-material/Facebook';
 import TwitterIcon from '@mui/icons-material/Twitter';
 import InstagramIcon from '@mui/icons-material/Instagram';
+import { makeStyles } from '@mui/styles';
+
+const useStyle = makeStyles({
+    socialIcon: {
+        color: '#19D3AE !important',
+        border: '1px solid #19D3AE !important',
+        '&:hover': {
+            background: '#19D3AE !important',
+            color: '#fff !important'
+        }
+    }
+})
 
 const Footer = () => {
+    const { socialIcon } = useStyle();
     return (
         // <div className="my-5">
         <footer>
@@ -15,13 +28,13 @@ const Footer = () => {
                             <ListItemText >CONTACT US:</ListItemText>
                             <ListItemText>Email: handicraftbd@gmail.com</ListItemText>
                         </List>
-                        <IconButton sx={{ color: '#fff' }}>
+                        <IconButton className={socialIcon}>
                             <FacebookIcon />
                         </IconButton>
-                        <IconButton sx={{ color: '#fff' }}>
+                        <IconButton className={socialIcon}>
                             <TwitterIcon />
                         </IconButton>
-                        <IconButton sx={{ color: '#fff' }}>
+                        <IconButton className={socialIcon}>
                             <InstagramIcon />
                         </IconButton>
                     </Grid>
@@ -39,7 +52,8 @@ const Footer = () => {
                         <List>
                             <ListItemText sx={{ color: '#19D3AE', mb: 1 }}>GOOGLE MAP:</ListItemText>
                         </List>
-
+                        <Typography>Call Now: +088-6266666
+                        </Typography>
                     </Grid>
                 </Grid>
             </Container>
