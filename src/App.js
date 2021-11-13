@@ -10,7 +10,7 @@ import About from './Pages/Home/Home/About/About';
 import Service from './Pages/Home/Service/Service';
 import Footer from './Pages/Dashboard/Footer/Footer';
 import Header from './Pages/Dashboard/Header/Header';
-import ProductOrder from './Pages/ProductOrder/ProductOrder';
+import Products from './Pages/Products/Products/Products';
 
 function App() {
   return (
@@ -20,7 +20,7 @@ function App() {
         <Switch>
           <Route exact path="/" component={Home} />
           <Route exact path="/service" component={Service} />
-          <Route exact path="/productOrder" component={ProductOrder} />
+          <Route exact path="/products" component={Products} />
           <Route exact path="/about" component={About} />
 
         </Switch>

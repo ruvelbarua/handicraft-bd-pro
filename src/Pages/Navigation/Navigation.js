@@ -96,7 +96,7 @@ export default function Navigation() {
                             <Link className={navItem} to="/"><Button color="inherit">
                                 HOME
                             </Button></Link>
-                            <Link className={navItem} to="/service"><Button color="inherit">
+                            <Link className={navItem} to="/products"><Button color="inherit">
                                 PRODUCTS
                             </Button></Link>
                             <Link className={navItem} to="/about"><Button color="inherit">
