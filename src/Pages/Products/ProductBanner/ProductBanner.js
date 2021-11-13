@@ -7,11 +7,9 @@ const ProductBanner = ({ date, setDate }) => {
     const style = {
         display: 'flex',
         alignItem: 'center',
-        minHeight: 500,
-        height: '90vh'
     }
     return (
-        <div style={style}>
+        <div className="my-5" style={style}>
             <Container>
                 <Grid container spacing={2}>
                     <Grid item xs={12} sm={12} md={6} lg={6}>

@@ -16,36 +16,42 @@ import Service from '../Service/Service';
 
 const services = [
     {
+        id: 101,
         name: 'BEDSHEET',
         description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit.',
         price: 1450,
         img: bedsheet
     },
     {
+        id: 102,
         name: 'HANDBAG',
         description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit.',
         price: 650,
         img: handbag
     },
     {
+        id: 103,
         name: 'OFFICE BAG',
         description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit.',
         price: 950,
         img: officebag
     },
     {
+        id: 104,
         name: 'PILLOW COVER',
         description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit.',
         price: 450,
         img: pillow
     },
     {
+        id: 105,
         name: 'PERSONAL BAG',
         description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit.',
         price: 950,
         img: personal
     },
     {
+        id: 106,
         name: 'WALL VIEW',
         description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit.',
         price: 1050,
@@ -63,7 +69,7 @@ const Services = () => {
                 <Grid container spacing={{ xs: 2, md: 3 }} columns={{ xs: 4, sm: 8, md: 12 }}>
                     {
                         services.map(serviceitem => <Service
-                            key={serviceitem.name}
+                            key={serviceitem.id}
                             serviceitem={serviceitem}
                         ></Service>)
                     }
