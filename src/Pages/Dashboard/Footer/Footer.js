@@ -1,39 +1,50 @@
-import { Container, Grid, Typography } from '@mui/material';
+import { Container, Grid, IconButton, List, ListItemText, Typography } from '@mui/material';
 import React from 'react';
 import FacebookIcon from '@mui/icons-material/Facebook';
 import TwitterIcon from '@mui/icons-material/Twitter';
 import InstagramIcon from '@mui/icons-material/Instagram';
-import AddLocationIcon from '@mui/icons-material/AddLocation';
-import AccessTimeIcon from '@mui/icons-material/AccessTime';
-import AddIcCallIcon from '@mui/icons-material/AddIcCall';
 
 const Footer = () => {
     return (
-        <div className="my-5">
+        // <div className="my-5">
+        <footer>
             <Container>
-                <Grid container spacing={2} sx={{ textAlign: "center", background: "#2A1D1C", color: "#fff", width: "100%", height: 200 }}>
-                    <Grid item xs={12} sm={12} md={4} lg={4}>
-                        <Typography variant="h6">CONTACT US:</Typography>
-                        <Typography variant="body1">Email: handicraftbd@gmail.com</Typography>
-                        <Typography variant="body1">
-                            Facebook</Typography>
-                        <Typography variant="body1">Twitter:</Typography>
-                        <Typography variant="body1">Instagram:</Typography>
+                <Grid container spacing={3} marginTop={4} marginBottom={10} sx={{ textAlign: "center", background: "#2A1D1C", color: "#fff", width: "100%" }}>
+                    <Grid item xs={12} sm={12} md={6} lg={3}>
+                        <List sx={{ mt: 4 }}>
+                            <ListItemText >CONTACT US:</ListItemText>
+                            <ListItemText>Email: handicraftbd@gmail.com</ListItemText>
+                        </List>
+                        <IconButton sx={{ color: '#fff' }}>
+                            <FacebookIcon />
+                        </IconButton>
+                        <IconButton sx={{ color: '#fff' }}>
+                            <TwitterIcon />
+                        </IconButton>
+                        <IconButton sx={{ color: '#fff' }}>
+                            <InstagramIcon />
+                        </IconButton>
                     </Grid>
-                    <Grid item xs={12} sm={12} md={4} lg={4}>
-                        <Typography variant="h6">OUR SERVICES:</Typography>
-                        <Typography variant="body1">Home Delivery</Typography>
-                        <Typography variant="body1">
-                            Online Booking</Typography>
-                        <Typography variant="body1">Transport Service</Typography>
-                        <Typography variant="body1">Online Banking</Typography>
+                    <Grid item xs={12} sm={12} md={6} lg={3}>
+                        <List>
+                            <ListItemText sx={{ color: '#19D3AE', mb: 1 }}>OUR SERVICES:</ListItemText>
+                            <ListItemText >Home Delivery</ListItemText>
+                            <ListItemText >
+                                Online Booking</ListItemText>
+                            <ListItemText >Transport Service</ListItemText>
+                            <ListItemText >Online Banking</ListItemText>
+                        </List>
                     </Grid>
-                    <Grid item xs={12} sm={12} md={4} lg={4}>
-                        <Typography variant="h6">GOOGLE MAP</Typography>
+                    <Grid item xs={12} sm={12} md={6} lg={3}>
+                        <List>
+                            <ListItemText sx={{ color: '#19D3AE', mb: 1 }}>GOOGLE MAP:</ListItemText>
+                        </List>
+
                     </Grid>
                 </Grid>
             </Container>
-        </div>
+        </footer>
+        // </div>
     );
 };
 
