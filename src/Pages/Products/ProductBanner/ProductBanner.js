@@ -1,7 +1,7 @@
 import { Container, Grid, Typography } from '@mui/material';
 import React from 'react';
 import bgimg from '../../../images/about/aboutbg.jpg';
-import Calender from '../Products/Calender';
+import Calender from '../Calender/Calender';
 
 const ProductBanner = ({ date, setDate }) => {
     const style = {

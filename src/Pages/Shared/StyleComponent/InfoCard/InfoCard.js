@@ -1,5 +1,4 @@
 import { Container, Grid, Paper, Typography } from '@mui/material';
-import { height } from '@mui/system';
 import React from 'react';
 import { infoData } from '../../dataInfo/dataInfo';
 

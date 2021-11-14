@@ -15,8 +15,10 @@ import Divider from '@mui/material/Divider';
 import ListItem from '@mui/material/ListItem';
 import ListItemText from '@mui/material/ListItemText';
 import logo from '../../images/logo/logo2.png'
+import useAuth from '../../contexts/AuthProvider/useAuth';
 
 export default function Navigation() {
+    const { user, logout } = useAuth();
     // <Box sx={{ flexGrow: 1 }}>
     const theme = useTheme()
     const useStyle = makeStyles({
@@ -99,13 +101,21 @@ export default function Navigation() {
                             <Link className={navItem} to="/products"><Button color="inherit">
                                 PRODUCTS
                             </Button></Link>
+                            <Link className={navItem} to="/dashboard"><Button color="inherit">
+                                DASHBOARD
+                            </Button></Link>
                             <Link className={navItem} to="/about"><Button color="inherit">
                                 ABOUT
                             </Button></Link>
                         </Box>
-                        <Link to="/">
-                            <Button sx={{ color: '#C11611' }} color="inherit">Login</Button>
-                        </Link>
+                        {
+                            user?.email ?
+                                <Button onClick={logout} sx={{ color: '#C11611' }} color="inherit">Logout</Button>
+                                :
+                                <Link to="/login">
+                                    <Button sx={{ color: '#C11611' }} color="inherit">Login</Button>
+                                </Link>
+                        }
 
                     </Toolbar>
                 </AppBar>

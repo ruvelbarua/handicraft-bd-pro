@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Grid from '@mui/material/Grid';
 import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
@@ -7,7 +7,25 @@ import Typography from '@mui/material/Typography';
 import { Button, CardActions } from '@mui/material';
 
 const Service = (props) => {
-    const { name, price, description, img } = props.serviceitem;
+    const { _id, name, price, description, img } = props.service;
+
+    const [isDeleted, setIsDeleted] = useState(null);
+
+    const handleDelete = (id) => {
+        fetch(`http://localhost:5000/deleteProduct/${id}`, {
+            method: "DELETE",
+            headers: { "content-type": "application/json" },
+        })
+            .then((res) => res.json())
+            .then((result) => {
+                if (result.deletedCount) {
+                    setIsDeleted(true);
+                } else {
+                    setIsDeleted(false);
+                }
+            });
+        console.log(isDeleted)
+    };
     return (
         <Grid item xs={4} sm={4} md={4}>
             <Card sx={{ minWidth: 275, border: 0, background: "#DEF3E0", boxShadow: 0 }}>
@@ -29,6 +47,14 @@ const Service = (props) => {
                     </Typography>
                 </CardContent>
                 <CardActions>
+                    <Button size="small" color="primary"
+                        onClick={() => handleDelete(_id)}
+                    >
+                        Delete
+                    </Button>
+                    <Button size="small" color="primary">
+                        Update
+                    </Button>
                     <Button size="small" color="primary">
                         Buy Now
                     </Button>
