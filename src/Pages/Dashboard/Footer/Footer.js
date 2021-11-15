@@ -4,6 +4,7 @@ import FacebookIcon from '@mui/icons-material/Facebook';
 import TwitterIcon from '@mui/icons-material/Twitter';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import { makeStyles } from '@mui/styles';
+import logo from '../../../images/logo/logo2.png'
 
 const useStyle = makeStyles({
     socialIcon: {
@@ -18,11 +19,12 @@ const useStyle = makeStyles({
 
 const Footer = () => {
     const { socialIcon } = useStyle();
+
     return (
         // <div className="my-5">
         <footer>
             <Container>
-                <Grid container spacing={3} marginTop={4} marginBottom={10} sx={{ textAlign: "center", background: "#2A1D1C", color: "#fff", width: "100%" }}>
+                <Grid container spacing={3} marginTop={4} marginBottom={10} sx={{ textAlign: "center", background: "#021C1C", color: "#fff", width: "100%" }}>
                     <Grid item xs={12} sm={12} md={6} lg={3}>
                         <List sx={{ mt: 4 }}>
                             <ListItemText >CONTACT US:</ListItemText>
@@ -48,12 +50,15 @@ const Footer = () => {
                             <ListItemText >Online Banking</ListItemText>
                         </List>
                     </Grid>
-                    <Grid item xs={12} sm={12} md={6} lg={3}>
-                        <List>
-                            <ListItemText sx={{ color: '#19D3AE', mb: 1 }}>GOOGLE MAP:</ListItemText>
-                        </List>
-                        <Typography>Call Now: +088-6266666
+                    <Grid item sx={{ color: "#fff" }} xs={12} sm={12} md={6} lg={3}>
+                        <Typography className="" component="div" sx={{ flexGrow: 1 }}>
+                            <img src={logo} alt="" height="10%" width="60%" />
                         </Typography>
+
+                        <ListItemText >Call Now: +088-6266666</ListItemText>
+                        <ListItemText >Design: Ruvel Barua</ListItemText>
+                        <ListItemText >Contact: ruvel.br78@gmail.com</ListItemText>
+                        <ListItemText >Thanks By: Programming Hero Team.</ListItemText>
                     </Grid>
                 </Grid>
             </Container>

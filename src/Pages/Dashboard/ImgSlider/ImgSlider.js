@@ -20,9 +20,11 @@ const ImgSlider = () => {
                         alt="Welcome"
                     />
                     <Carousel.Caption>
-                        <h5>Welcome</h5>
-                        <h2>HANDICRAFT BD</h2>
-                        <h5>Best Products in Bangladesh</h5>
+                        <div className="text-warning">
+                            <h5>Welcome</h5>
+                            <h2>HANDICRAFT BD</h2>
+                            <h5>Best Products in Bangladesh</h5>
+                        </div>
                     </Carousel.Caption>
                 </Carousel.Item>
                 <Carousel.Item interval={2000}>
@@ -32,8 +34,10 @@ const ImgSlider = () => {
                         alt="Second slide"
                     />
                     <Carousel.Caption>
-                        <h2>HANDICRAFT BD</h2>
-                        <h5>Best Products in Bangladesh</h5>
+                        <div className="text-dark">
+                            <h2>HANDICRAFT BD</h2>
+                            <h5>Best Products in Bangladesh</h5>
+                        </div>
                     </Carousel.Caption>
                 </Carousel.Item>
                 <Carousel.Item interval={2000}>
@@ -43,8 +47,10 @@ const ImgSlider = () => {
                         alt="Second slide"
                     />
                     <Carousel.Caption>
-                        <h2>HANDICRAFT BD</h2>
-                        <h5>Best Products in Bangladesh</h5>
+                        <div className="text-primary">
+                            <h2>HANDICRAFT BD</h2>
+                            <h5>Best Products in Bangladesh</h5>
+                        </div>
                     </Carousel.Caption>
                 </Carousel.Item>
                 <Carousel.Item interval={2000}>
@@ -54,8 +60,10 @@ const ImgSlider = () => {
                         alt="Third slide"
                     />
                     <Carousel.Caption>
-                        <h2>HANDICRAFT BD</h2>
-                        <h5>Best Products in Bangladesh</h5>
+                        <div className="text-success">
+                            <h2>HANDICRAFT BD</h2>
+                            <h5>Best Products in Bangladesh</h5>
+                        </div>
                     </Carousel.Caption>
                 </Carousel.Item>
                 <Carousel.Item interval={2000}>
@@ -65,8 +73,10 @@ const ImgSlider = () => {
                         alt="Third slide"
                     />
                     <Carousel.Caption>
-                        <h2>HANDICRAFT BD</h2>
-                        <h5>Best Products in Bangladesh</h5>
+                        <div className="text-success">
+                            <h2>HANDICRAFT BD</h2>
+                            <h5>Best Products in Bangladesh</h5>
+                        </div>
                     </Carousel.Caption>
                 </Carousel.Item>
                 <Carousel.Item interval={2000}>
@@ -76,8 +86,10 @@ const ImgSlider = () => {
                         alt="Third slide"
                     />
                     <Carousel.Caption>
-                        <h2>HANDICRAFT BD</h2>
-                        <h5>Best Products in Bangladesh</h5>
+                        <div className="text-primary">
+                            <h2>HANDICRAFT BD</h2>
+                            <h5>Best Products in Bangladesh</h5>
+                        </div>
                     </Carousel.Caption>
                 </Carousel.Item>
                 <Carousel.Item interval={2000}>
@@ -87,8 +99,10 @@ const ImgSlider = () => {
                         alt="Third slide"
                     />
                     <Carousel.Caption>
-                        <h2>HANDICRAFT BD</h2>
-                        <h5>Best Products in Bangladesh</h5>
+                        <div className="text-primary">
+                            <h2>HANDICRAFT BD</h2>
+                            <h5>Best Products in Bangladesh</h5>
+                        </div>
                     </Carousel.Caption>
                 </Carousel.Item>
                 <Carousel.Item interval={2000}>

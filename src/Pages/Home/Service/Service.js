@@ -28,9 +28,6 @@ const Service = (props) => {
         console.log(isDeleted)
     };
 
-    // const handleAddToCart = (index) => {
-    //     console.log(index)
-    // }
     return (
         <Grid item xs={4} sm={4} md={4}>
             <Card sx={{ minWidth: 275, border: 0, background: "#DEF3E0", boxShadow: 0 }}>
