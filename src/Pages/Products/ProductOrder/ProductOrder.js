@@ -51,9 +51,10 @@ export default function ProductOrder({ open, handleClose, name, price, date }) {
             .then(res => res.json())
             .then(data => {
                 console.log(data)
+                handleClose();
             })
 
-        handleClose();
+
         e.preventDefault();
     }
 

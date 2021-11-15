@@ -6,7 +6,8 @@ import { useParams } from 'react-router';
 const UpdateProduct = () => {
     const { productId } = useParams();
     const [singleProduct, setSingleProduct] = useState({});
-    const { register, handleSubmit, formState: { errors } } = useForm();
+    const { register, reset, handleSubmit, formState: { errors } } = useForm();
+
 
     const onSubmit = (data) => {
         console.log(data);
@@ -18,7 +19,7 @@ const UpdateProduct = () => {
             body: JSON.stringify(data),
         })
             .then((res) => res.json())
-            .then((result) => console.log(result.modifiedCount));
+            .then((result) => reset());
     };
     // Single Product Link
     useEffect(() => {
