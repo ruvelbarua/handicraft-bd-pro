@@ -6,7 +6,6 @@ import {
   Route,
 } from "react-router-dom";
 import Home from './Pages/Home/Home';
-import About from './Pages/Home/Home/About/About';
 import Service from './Pages/Home/Service/Service';
 import Services from './Pages/Home/Services/Services';
 import Footer from './Pages/Dashboard/Footer/Footer';
@@ -14,11 +13,15 @@ import Header from './Pages/Dashboard/Header/Header';
 import Products from './Pages/Products/Products';
 import Dashboard from './Pages/Dashboard/Dashboard';
 import Login from './Pages/Login/Login';
+import Admin from './Pages/Home/Admin/Admin';
 import Register from './Pages/Login/Register/Register';
 import AuthProvider from './contexts/AuthProvider/AuthProvider';
 import AddProducts from './Pages/Products/AddProducts/AddProducts';
 import UpdateProduct from './Pages/Products/UpdateProduct/UpdateProduct';
-import Product from './Pages/Products/Product/Product';
+import ProductOrder from './Pages/Products/ProductOrder/ProductOrder';
+import About from './Pages/Home/About/About';
+import Users from './Pages/Home/Users/Users';
+import PrivateRoute from './Pages/Login/Login/PrivateRoute/PrivateRoute';
 
 function App() {
   return (
@@ -27,18 +30,48 @@ function App() {
         <Router>
           <Header />
           <Switch>
-            <Route exact path="/" component={Home} />
-            <Route exact path="/home" component={Home} />
-            <Route exact path="/service" component={Service} />
-            <Route exact path="/services" component={Services} />
-            <Route path="/products" component={Products} />
-            <Route path="/product" component={Product} />
-            <Route path="/addproducts" component={AddProducts} />
-            <Route path="/update/:productId" component={UpdateProduct} />
-            <Route path="/dashboard" component={Dashboard} />
-            <Route exact path="/about" component={About} />
-            <Route exact path="/login" component={Login} />
-            <Route exact path="/register" component={Register} />
+            <Route exact path="/">
+              <Home />
+            </Route>
+            <Route exact path="/home">
+              <Home />
+            </Route>
+            <Route exact path="/products">
+              <Products />
+            </Route>
+            <Route exact path="/services">
+              <Services />
+            </Route>
+            <Route exact path="/service">
+              <Service />
+            </Route>
+            <PrivateRoute exact path="/update/:productId">
+              <UpdateProduct />
+            </PrivateRoute>
+            <Route exact path="/productOrder">
+              <ProductOrder />
+            </Route>
+            <Route exact path="/addproducts">
+              <AddProducts />
+            </Route>
+            <Route exact path="/dashboard">
+              <Dashboard />
+            </Route>
+            <Route exact path="/about">
+              <About />
+            </Route>
+            <PrivateRoute exact path="/users">
+              <Users />
+            </PrivateRoute>
+            <PrivateRoute exact path="/admin">
+              <Admin />
+            </PrivateRoute>
+            <Route exact path="/login">
+              <Login />
+            </Route>
+            <Route exact path="/register">
+              <Register />
+            </Route>
           </Switch>
           <Footer />
         </Router>

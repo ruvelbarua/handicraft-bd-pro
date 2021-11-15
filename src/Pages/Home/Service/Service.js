@@ -8,7 +8,7 @@ import Typography from '@mui/material/Typography';
 import { Button, CardActions } from '@mui/material';
 
 const Service = (props) => {
-    const { _id, name, price, description, img, index } = props.service;
+    const { _id, name, price, description, img } = props.service;
 
     const [isDeleted, setIsDeleted] = useState(null);
 
@@ -27,6 +27,10 @@ const Service = (props) => {
             });
         console.log(isDeleted)
     };
+
+    // const handleAddToCart = (index) => {
+    //     console.log(index)
+    // }
     return (
         <Grid item xs={4} sm={4} md={4}>
             <Card sx={{ minWidth: 275, border: 0, background: "#DEF3E0", boxShadow: 0 }}>
@@ -34,7 +38,6 @@ const Service = (props) => {
                     component="img"
                     style={{ width: '100%', height: '280px', margin: '0 auto' }}
                     image={img}
-                    alt="green iguana"
                 />
                 <CardContent>
                     <Typography variant="h5" component="div">
@@ -57,7 +60,8 @@ const Service = (props) => {
                         <Button size="small" color="primary">
                             Update
                         </Button></Link>
-                    <Button size="small" color="primary">
+
+                    <Button onClick="/product" size="small" color="primary">
                         Buy Now
                     </Button>
                 </CardActions>

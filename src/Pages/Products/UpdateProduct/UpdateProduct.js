@@ -6,7 +6,7 @@ import { useParams } from 'react-router';
 const UpdateProduct = () => {
     const { productId } = useParams();
     const [singleProduct, setSingleProduct] = useState({});
-    const { register, handleSubmit, watch, formState: { errors } } = useForm();
+    const { register, handleSubmit, formState: { errors } } = useForm();
 
     const onSubmit = (data) => {
         console.log(data);

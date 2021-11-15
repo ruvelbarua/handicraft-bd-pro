@@ -74,7 +74,7 @@ const Register = () => {
                     {user?.email && <Alert severity="success">User Created successfully!</Alert>}
                     {authError && <Alert severity="error">{authError}</Alert>}
                 </Grid>
-                <Grid item xs={12} md={6}>
+                <Grid item sx={{ mt: 8 }} xs={12} md={6}>
                     <img style={{ width: '100%' }} src={login} alt="" />
                 </Grid>
             </Grid>

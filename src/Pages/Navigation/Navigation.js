@@ -18,7 +18,7 @@ import logo from '../../images/logo/logo2.png'
 import useAuth from '../../contexts/AuthProvider/useAuth';
 
 export default function Navigation() {
-    const { user, logout } = useAuth();
+    const { user, logOut } = useAuth();
     // <Box sx={{ flexGrow: 1 }}>
     const theme = useTheme()
     const useStyle = makeStyles({
@@ -68,7 +68,7 @@ export default function Navigation() {
                 <Divider />
                 <ListItem button>
                     <ListItemText>
-                        <Link className={navListItem} to="/service">Services</Link>
+                        <Link className={navListItem} to="/products">Products</Link>
                     </ListItemText>
                 </ListItem>
             </List>
@@ -101,16 +101,19 @@ export default function Navigation() {
                             <Link className={navItem} to="/products"><Button color="inherit">
                                 PRODUCTS
                             </Button></Link>
-                            <Link className={navItem} to="/dashboard"><Button color="inherit">
-                                DASHBOARD
-                            </Button></Link>
                             <Link className={navItem} to="/about"><Button color="inherit">
                                 ABOUT
+                            </Button></Link>
+                            <Link className={navItem} to="/users"><Button color="inherit">
+                                USERS
+                            </Button></Link>
+                            <Link className={navItem} to="/admin"><Button color="inherit">
+                                ADMIN
                             </Button></Link>
                         </Box>
                         {
                             user?.email ?
-                                <Button onClick={logout} sx={{ color: '#C11611' }} color="inherit">Logout</Button>
+                                <Button onClick={logOut} sx={{ color: '#C11611' }} color="inherit">Logout</Button>
                                 :
                                 <Link to="/login">
                                     <Button sx={{ color: '#C11611' }} color="inherit">Login</Button>

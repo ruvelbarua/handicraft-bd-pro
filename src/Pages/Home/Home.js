@@ -1,15 +1,17 @@
 import React from 'react';
 import ImgSlider from '../Dashboard/ImgSlider/ImgSlider';
 import Contact from '../Login/Contact/Contact';
-import About from './Home/About/About';
-import Services from './Services/Services';
+import Register from '../Login/Register/Register';
+import Products from '../Products/Products';
+import About from './About/About';
 
 const Home = () => {
     return (
         <div>
             <ImgSlider></ImgSlider>
-            <Services></Services>
             <About></About>
+            <Products></Products>
+            <Register></Register>
             <Contact></Contact>
         </div>
     );

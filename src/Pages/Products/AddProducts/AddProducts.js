@@ -3,7 +3,7 @@ import { useForm } from "react-hook-form";
 import "./AddProducts.css";
 
 const AddProducts = () => {
-    const { register, handleSubmit, watch,
+    const { register, handleSubmit,
         formState: { errors },
     } = useForm();
 
