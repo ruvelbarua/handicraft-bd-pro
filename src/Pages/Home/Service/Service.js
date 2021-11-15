@@ -13,7 +13,7 @@ const Service = (props) => {
     const [isDeleted, setIsDeleted] = useState(null);
 
     const handleDelete = (id) => {
-        fetch(`http://localhost:5000/deleteProduct/${id}`, {
+        fetch(`https://mysterious-reef-83390.herokuapp.com/deleteProduct/${id}`, {
             method: "DELETE",
             headers: { "content-type": "application/json" },
         })
