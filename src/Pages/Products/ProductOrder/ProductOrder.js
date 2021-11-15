@@ -19,6 +19,7 @@ const style = {
 
 export default function ProductOrder({ open, handleClose, name, price, date }) {
 
+
     const { user } = useAuth();
     const initialInfo = { customerName: user.displayName, email: user.email, phone: '' }
     const [bookingInfo, setBookingInfo] = useState(initialInfo);

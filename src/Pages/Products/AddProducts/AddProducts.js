@@ -3,7 +3,6 @@ import { useForm } from "react-hook-form";
 import "./AddProducts.css";
 
 const AddProducts = () => {
-    const [products, setProducts] = useState([]);
     const { register, handleSubmit, watch,
         formState: { errors },
     } = useForm();
@@ -15,7 +14,7 @@ const AddProducts = () => {
             body: JSON.stringify(data),
         })
             .then((res) => res.json())
-            .then((result) => console.log(result));
+            .then((data) => console.log(data));
         console.log(data);
     };
 
@@ -31,12 +30,12 @@ const AddProducts = () => {
                                     placeholder="Product Name"
                                     className="p-2 m-2 w-90" />
                                 <br />
-                                <input {...register("price", { required: true })}
+                                <input {...register("price")}
                                     placeholder="Price"
                                     type="number"
                                     className="p-2 m-2 w-90" />
                                 <br />
-                                <input {...register("description", { required: true })}
+                                <input {...register("description")}
                                     placeholder="description"
                                     className="p-2 m-2 w-90" />
                                 <br />
@@ -44,7 +43,7 @@ const AddProducts = () => {
                                     type="Date"
                                     className="p-2 m-2 w-90" />
                                 <br />
-                                <input {...register("img", { required: true })}
+                                <input {...register("img")}
                                     placeholder="Image"
                                     className="p-2 m-2 w-90" />
                                 <br />

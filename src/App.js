@@ -17,6 +17,8 @@ import Login from './Pages/Login/Login';
 import Register from './Pages/Login/Register/Register';
 import AuthProvider from './contexts/AuthProvider/AuthProvider';
 import AddProducts from './Pages/Products/AddProducts/AddProducts';
+import UpdateProduct from './Pages/Products/UpdateProduct/UpdateProduct';
+import Product from './Pages/Products/Product/Product';
 
 function App() {
   return (
@@ -30,7 +32,9 @@ function App() {
             <Route exact path="/service" component={Service} />
             <Route exact path="/services" component={Services} />
             <Route path="/products" component={Products} />
+            <Route path="/product" component={Product} />
             <Route path="/addproducts" component={AddProducts} />
+            <Route path="/update/:productId" component={UpdateProduct} />
             <Route path="/dashboard" component={Dashboard} />
             <Route exact path="/about" component={About} />
             <Route exact path="/login" component={Login} />

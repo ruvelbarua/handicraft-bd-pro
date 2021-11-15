@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import Grid from '@mui/material/Grid';
 import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
@@ -7,7 +8,7 @@ import Typography from '@mui/material/Typography';
 import { Button, CardActions } from '@mui/material';
 
 const Service = (props) => {
-    const { _id, name, price, description, img } = props.service;
+    const { _id, name, price, description, img, index } = props.service;
 
     const [isDeleted, setIsDeleted] = useState(null);
 
@@ -52,9 +53,10 @@ const Service = (props) => {
                     >
                         Delete
                     </Button>
-                    <Button size="small" color="primary">
-                        Update
-                    </Button>
+                    <Link to={`/update/${_id}`}>
+                        <Button size="small" color="primary">
+                            Update
+                        </Button></Link>
                     <Button size="small" color="primary">
                         Buy Now
                     </Button>

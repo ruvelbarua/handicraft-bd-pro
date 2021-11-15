@@ -11,7 +11,7 @@ const Booking = ({ date }) => {
     return (
         <Container>
             <Typography variant="h4" sx={{ fontWeight: 600, color: '#074BE8', textAlign: "center", mb: 4 }}>
-                YOUR BOOKING DATE IS: {new Date(date).toDateString()}
+                BOOKING DATE IS: {new Date(date).toDateString()}
             </Typography>
             <Grid container spacing={3}>
                 {
