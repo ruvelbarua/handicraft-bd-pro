@@ -51,7 +51,7 @@ export default function Navigation() {
     const list = (
         <Box
             sx={{ width: 250 }}
-            role="presentation"
+            role=""
         >
             <List>
                 <ListItem button>

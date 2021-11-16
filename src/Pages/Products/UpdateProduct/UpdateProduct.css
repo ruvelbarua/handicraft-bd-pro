@@ -1,22 +1,22 @@
-.input-product form{
+.update-product form{
     display:flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color:rgb(16, 50, 66);
+    background-color:rgb(13, 81, 145);
 }
-.input-product form input, textarea, select {
+.update-product form input, textarea, select {
     margin-top: 10px;
     height: 40px;
     width: 40%;
     margin-bottom: 15px;
    border-radius: 5px;
 }
-.fontcolor{
-    color: darkblue;
+.fontdesign{
+    color:green;
 }
-.submitbtn{
-    color: whitesmoke;
-    background-color:green;
+.updatebtn{
+    color:white;
+    background-color:tomato;
     font-size: large;
 }

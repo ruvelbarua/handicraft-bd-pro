@@ -20,7 +20,8 @@ const About = () => {
                             <Typography style={{ fontSize: 20, textAlign: 'justify' }} sx={{ lineHeight: 2, my: 3 }}>
                                 Handicraft is a world wide femous natural beauty personal and family products. Basicaly, Bangladeshi made products is a best choice in the world. Our company ensure export quality product. Every items are mantain best services. So, visit our best products and order now.Thank you.
                             </Typography>
-                            <MuButton onClick="/products">Visit More...</MuButton>
+                            <link rel="stylesheet" href="/products" />
+                            <MuButton>Visit More...</MuButton>
                         </Grid>
                         <Grid item xs={12} sm={12} md={6} lg={6}>
                             <div>
