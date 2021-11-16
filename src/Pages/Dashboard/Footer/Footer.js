@@ -24,7 +24,7 @@ const Footer = () => {
         // <div className="my-5">
         <footer>
             <Container>
-                <Grid container spacing={3} marginTop={4} marginBottom={10} sx={{ textAlign: "center", background: "#021C1C", color: "#fff", width: "100%" }}>
+                <Grid container marginTop={4} marginBottom={10} sx={{ textAlign: "center", background: "#021C1C", color: "#fff", width: "100%" }}>
                     <Grid item xs={12} sm={12} md={6} lg={3}>
                         <List sx={{ mt: 4 }}>
                             <ListItemText >CONTACT US:</ListItemText>
@@ -41,7 +41,7 @@ const Footer = () => {
                         </IconButton>
                     </Grid>
                     <Grid item xs={12} sm={12} md={6} lg={3}>
-                        <List>
+                        <List sx={{ mt: 4 }}>
                             <ListItemText sx={{ color: '#19D3AE', mb: 1 }}>OUR SERVICES:</ListItemText>
                             <ListItemText >Home Delivery</ListItemText>
                             <ListItemText >
@@ -54,11 +54,14 @@ const Footer = () => {
                         <Typography className="" component="div" sx={{ flexGrow: 1 }}>
                             <img src={logo} alt="" height="10%" width="60%" />
                         </Typography>
-
-                        <ListItemText >Call Now: +088-6266666</ListItemText>
-                        <ListItemText >Design: Ruvel Barua</ListItemText>
-                        <ListItemText >Contact: ruvel.br78@gmail.com</ListItemText>
-                        <ListItemText >Thanks By: Programming Hero Team.</ListItemText>
+                        <Typography variant="subtitle1">
+                            <ListItemText>Call Now: +088-6266666</ListItemText>
+                            <ListItemText >Design: Ruvel Barua</ListItemText>
+                            <ListItemText >Contact: ruvel.br78@gmail.com</ListItemText>
+                            <ListItemText >Thanks By: Programming Hero Team.</ListItemText>
+                        </Typography>
+                        <Grid>
+                        </Grid>
                     </Grid>
                 </Grid>
             </Container>

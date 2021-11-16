@@ -32,7 +32,8 @@ const Login = () => {
         <Container>
             <Grid container spacing={2}>
                 <Grid item sx={{ mt: 8 }} xs={12} md={6}>
-                    <Typography variant="h3" color="#07615D " gutterBottom>Please Login</Typography>
+                    <Typography variant="h3" color="#07615D " gutterBottom>PLEASE LOGIN</Typography>
+                    <span>*New user please registration first.</span>
                     <form onSubmit={handleLoginSubmit}>
                         <TextField
                             sx={{ width: '75%', m: 1 }}
@@ -54,7 +55,7 @@ const Login = () => {
                         <NavLink
                             style={{ textDecoration: 'none' }}
                             to="/register">
-                            <Button variant="text">New User? Please Register</Button>
+                            <Button variant="text" sx={{ color: "#0BA714" }}> New User? Click Register or Google Sign in</Button>
                         </NavLink>
                         {isLoading && <CircularProgress />}
                         {user?.email && <Alert severity="success">Login successfully!</Alert>}

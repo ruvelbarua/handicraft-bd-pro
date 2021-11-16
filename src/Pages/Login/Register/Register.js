@@ -30,7 +30,7 @@ const Register = () => {
             <Grid container spacing={2}>
                 <Grid item sx={{ mt: 8 }} xs={12} md={6}>
                     <Typography variant="h3" color="#070BA7" gutterBottom>REGISTRATION FORM</Typography>
-                    <Typography variant="body1" gutterBottom>**Please first fegistration then buy our products.**</Typography>
+                    <span>*Previous user not necessary registration.</span>
                     {!isLoading && <form onSubmit={handleLoginSubmit}>
                         <TextField
                             sx={{ width: '75%', m: 1 }}
@@ -68,7 +68,7 @@ const Register = () => {
                         <NavLink
                             style={{ textDecoration: 'none' }}
                             to="/login">
-                            <Button variant="text">Already Registered? Please Login</Button>
+                            <Button variant="text" sx={{ color: "#0BA714" }}>Already Registered? Click Login or Google Sign in</Button>
                         </NavLink>
                     </form>}
                     {isLoading && <CircularProgress />}
