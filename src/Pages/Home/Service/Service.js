@@ -8,7 +8,7 @@ import Typography from '@mui/material/Typography';
 import { Button, CardActions } from '@mui/material';
 
 const Service = (props) => {
-    const { name, price, description, img } = props.service;
+    const { _id, name, price, description, img } = props.product;
     return (
         <Grid item xs={4} sm={4} md={4}>
             <Card sx={{ minWidth: 275, border: 0, background: "#DEF3E0", boxShadow: 0 }}>
@@ -27,6 +27,9 @@ const Service = (props) => {
                     <Typography variant="body2" color="text.secondary">
                         {description}
                     </Typography>
+                    <Link to={`/booking/${_id}`}>
+                        <button className="btn btn-warning">Buy Now</button>
+                    </Link>
                 </CardContent>
             </Card>
         </Grid >

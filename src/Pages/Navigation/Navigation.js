@@ -51,7 +51,7 @@ export default function Navigation() {
     const list = (
         <Box
             sx={{ width: 250 }}
-            role=""
+            role="presentation"
         >
             <List>
                 <ListItem button>
@@ -78,7 +78,7 @@ export default function Navigation() {
     return (
         <>
             <Box sx={{ flexGrow: 1 }}>
-                <AppBar position="static" sx={{ bgcolor: '#E5ECF5' }}>
+                <AppBar position="static" sx={{ bgcolor: '#2858F1' }}>
                     <Toolbar>
                         <IconButton
                             size="large"
@@ -95,19 +95,19 @@ export default function Navigation() {
                             <img src={logo} alt="" width="25%" />
                         </Typography>
                         <Box className={navItemContainer}>
-                            <Link className={navItem} to="/"><Button color="inherit">
+                            <Link className={navItem} to="/"><Button sx={{ color: "#FAF9F3" }} color="inherit">
                                 HOME
                             </Button></Link>
-                            <Link className={navItem} to="/products"><Button color="inherit">
+                            <Link className={navItem} to="/products"><Button sx={{ color: "#FAF9F3" }} color="inherit">
                                 PRODUCTS
                             </Button></Link>
-                            <Link className={navItem} to="/about"><Button color="inherit">
+                            <Link className={navItem} to="/about"><Button sx={{ color: "#FAF9F3" }} color="inherit">
                                 ABOUT
                             </Button></Link>
-                            <Link className={navItem} to="/users"><Button color="inherit">
+                            <Link className={navItem} to="/users"><Button sx={{ color: "#FAF9F3" }} color="inherit">
                                 USERS
                             </Button></Link>
-                            <Link className={navItem} to="/admin"><Button color="inherit">
+                            <Link className={navItem} to="/admin"><Button sx={{ color: "#FAF9F3" }} color="inherit">
                                 ADMIN
                             </Button></Link>
                         </Box>

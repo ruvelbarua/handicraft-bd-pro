@@ -22,6 +22,7 @@ import About from './Pages/Home/About/About';
 import Users from './Pages/Home/Users/Users';
 import PrivateRoute from './Pages/Login/Login/PrivateRoute/PrivateRoute';
 import NoPage from './Pages/Home/NoPage/NoPage';
+import Booking from './Pages/Products/Booking/Booking';
 
 function App() {
   return (
@@ -42,7 +43,10 @@ function App() {
             <Route exact path="/services">
               <Services />
             </Route>
-            <PrivateRoute exact path="/update/:productId">
+            <Route exact path="/booking/:productId">
+              <Booking />
+            </Route>
+            <PrivateRoute exact path="/update">
               <UpdateProduct />
             </PrivateRoute>
             <Route exact path="/productOrder">
