@@ -6,7 +6,6 @@ import {
   Route,
 } from "react-router-dom";
 import Home from './Pages/Home/Home';
-import Service from './Pages/Home/Service/Service';
 import Services from './Pages/Home/Services/Services';
 import Footer from './Pages/Dashboard/Footer/Footer';
 import Header from './Pages/Dashboard/Header/Header';
@@ -42,9 +41,6 @@ function App() {
             </Route>
             <Route exact path="/services">
               <Services />
-            </Route>
-            <Route exact path="/service">
-              <Service />
             </Route>
             <PrivateRoute exact path="/update/:productId">
               <UpdateProduct />

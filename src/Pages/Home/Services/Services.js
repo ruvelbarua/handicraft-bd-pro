@@ -16,15 +16,15 @@ const Services = () => {
     }, []);
 
     return (
-        <Box className="my-5" sx={{ flexGrow: 1 }}>
+        <Box _id="services" className="my-5" sx={{ flexGrow: 1 }}>
             <Container>
                 <Typography variant="h4" component="div" sx={{ fontWeight: 600, m: 5, color: "#070E94" }}>
                     HANDICRAFT PRODUCTS
                 </Typography>
                 <Grid container spacing={{ xs: 2, md: 3 }} columns={{ xs: 4, sm: 8, md: 12 }}>
                     {
-                        services.map((service) => <Service
-                            key={service._id}
+                        services.map(service => <Service
+                            key={service.name}
                             service={service}
                         ></Service>)
                     }

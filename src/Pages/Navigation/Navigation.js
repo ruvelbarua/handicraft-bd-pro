@@ -45,7 +45,7 @@ export default function Navigation() {
             textDecoration: 'none',
             color: '#0C184E '
         }
-    })
+    });
     const { navItem, navIcon, navItemContainer, navLogo, navListItem } = useStyle()
     const [state, setState] = React.useState(false);
     const list = (
