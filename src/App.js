@@ -6,7 +6,6 @@ import {
   Route,
 } from "react-router-dom";
 import Home from './Pages/Home/Home';
-import Services from './Pages/Home/Services/Services';
 import Footer from './Pages/Dashboard/Footer/Footer';
 import Header from './Pages/Dashboard/Header/Header';
 import Products from './Pages/Products/Products';
@@ -38,18 +37,15 @@ function App() {
             <Route exact path="/products">
               <Products />
             </Route>
-            <Route exact path="/services">
-              <Services />
-            </Route>
             <PrivateRoute exact path="/booking/:productId">
               <Booking />
             </PrivateRoute>
             <Route exact path="/manageProducts">
               <ManageProducts />
             </Route>
-            <Route exact path="/dashboard">
-            <Dashboard></Dashboard>
-            </Route>
+            <PrivateRoute exact path="/dashboard">
+              <Dashboard></Dashboard>
+            </PrivateRoute>
             <Route exact path="/about">
               <About />
             </Route>
