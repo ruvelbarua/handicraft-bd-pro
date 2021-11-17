@@ -31,7 +31,7 @@ const ManageProducts = () => {
 
     return (
         <div className="container my-5">
-            <h1>MANAGE YOUR PRODUCT</h1>
+            <h1>MANAGE CLIENT PRODUCT</h1>
             <div className="row">
                 {
                     products.map(product => <div key={product._id} className="col-md-4 bg-light border p-3">
@@ -42,7 +42,7 @@ const ManageProducts = () => {
                         <p>Name:{product.name}</p>
                         <p>{product.description}</p>
                         <Button className="border text-danger" onClick={() => handleDelete(product._id)} variant="">Delete</Button>
-                        {/* <Button className="border text-success" onClick={() => (product._id)} variant="">Cancel</Button> */}
+                        <Button className="border text-success" onClick={() => (product._id)} variant="">Cancel</Button>
                     </div>)
                 }
 
