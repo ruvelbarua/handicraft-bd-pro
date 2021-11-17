@@ -15,14 +15,12 @@ import Login from './Pages/Login/Login';
 import Admin from './Pages/Home/Admin/Admin';
 import Register from './Pages/Login/Register/Register';
 import AuthProvider from './contexts/AuthProvider/AuthProvider';
-import AddProducts from './Pages/Products/AddProducts/AddProducts';
-import UpdateProduct from './Pages/Products/UpdateProduct/UpdateProduct';
-import ProductOrder from './Pages/Products/ProductOrder/ProductOrder';
 import About from './Pages/Home/About/About';
 import Users from './Pages/Home/Users/Users';
 import PrivateRoute from './Pages/Login/Login/PrivateRoute/PrivateRoute';
 import NoPage from './Pages/Home/NoPage/NoPage';
 import Booking from './Pages/Products/Booking/Booking';
+import ManageProducts from './Pages/Products/ManageProducts/ManageProducts';
 
 function App() {
   return (
@@ -46,14 +44,8 @@ function App() {
             <Route exact path="/booking/:productId">
               <Booking />
             </Route>
-            <PrivateRoute exact path="/update">
-              <UpdateProduct />
-            </PrivateRoute>
-            <Route exact path="/productOrder">
-              <ProductOrder />
-            </Route>
-            <Route exact path="/addproducts">
-              <AddProducts />
+            <Route exact path="/manageProducts">
+              <ManageProducts />
             </Route>
             <Route exact path="/dashboard">
               <Dashboard />

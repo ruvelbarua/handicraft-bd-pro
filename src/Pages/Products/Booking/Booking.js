@@ -17,20 +17,21 @@ const Booking = () => {
 
     return (
         <div className="my-5 bg-light">
+            <h1>YOUR SELECTD PRODUCT</h1>
             <div className="row">
                 <div className="col-md-4 my-5 p-5 bg-light">
                     <div className="text-primary tour-card">
                         <div className="text-success">
-                            <h3>PACKAGE DETAILS</h3>
+                            <h3>PRODUCT DETAILS</h3>
                         </div>
                         <Form>
                             <img src={product.img} alt="" />
                             <h4 className="text-place"> {product.name}</h4>
-                            <h3>Package: {product.description}</h3>
+                            <h3>Product: {product.description}</h3>
                             <h5>Total Price: {product.price}</h5>
-                            <p>Person: Single</p>
+                            <p>Special Discount:</p>
                             <p className="text-success">
-                                Note: Special discount price 10%. Buy minimum 8 peces.
+                                Buy minimum 8 peces then you gain price 10% discount.
                             </p>
                         </Form>
                     </div>
