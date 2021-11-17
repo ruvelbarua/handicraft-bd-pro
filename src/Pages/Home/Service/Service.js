@@ -28,7 +28,7 @@ const Service = (props) => {
                         {description}
                     </Typography>
                     <Link to={`/booking/${_id}`}>
-                        <button className="btn btn-warning">Buy Now</button>
+                        <button className="btn btn-primary">Buy Now</button>
                     </Link>
                 </CardContent>
             </Card>

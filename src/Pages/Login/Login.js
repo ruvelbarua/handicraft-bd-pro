@@ -2,7 +2,7 @@ import { Button, CircularProgress, Container, TextField, Typography, Alert } fro
 import React, { useState } from 'react';
 import { NavLink, useLocation, useHistory } from 'react-router-dom';
 import { Grid } from '@mui/material';
-import login from '../../images/about/aboutbg.jpg';
+import login from '../../images/bigpot.jpg';
 import useAuth from '../../contexts/AuthProvider/useAuth';
 
 

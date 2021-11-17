@@ -2,7 +2,7 @@ import { Button, CircularProgress, Container, Grid, TextField, Typography, Alert
 import React, { useState } from 'react';
 import { NavLink, useHistory } from 'react-router-dom';
 import useAuth from '../../../contexts/AuthProvider/useAuth';
-import login from '../../../images/about/aboutbg.jpg';
+import login from '../../../images/pot.jpg';
 
 
 const Register = () => {
