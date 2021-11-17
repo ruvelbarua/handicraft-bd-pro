@@ -113,7 +113,12 @@ export default function Navigation() {
                         </Box>
                         {
                             user?.email ?
-                                <Button onClick={logOut} sx={{ color: '#C11611' }} color="inherit">Logout</Button>
+                                <Box>
+                                    <Link to="/dashboard">
+                                        <Button sx={{ color: '#fff' }} color="inherit">Dashboard</Button>
+                                    </Link>
+                                    <Button onClick={logOut} sx={{ color: '#C11611' }} color="inherit">Logout</Button>
+                                </Box>
                                 :
                                 <Link to="/login">
                                     <Button sx={{ color: '#C11611' }} color="inherit">Login</Button>

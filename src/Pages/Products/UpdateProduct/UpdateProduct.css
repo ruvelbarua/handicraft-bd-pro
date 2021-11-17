@@ -3,7 +3,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color:rgb(13, 81, 145);
+    background-color: lightcyan;
 }
 .update-product form input, textarea, select {
     margin-top: 10px;

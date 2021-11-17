@@ -10,7 +10,6 @@ import Services from './Pages/Home/Services/Services';
 import Footer from './Pages/Dashboard/Footer/Footer';
 import Header from './Pages/Dashboard/Header/Header';
 import Products from './Pages/Products/Products';
-import Dashboard from './Pages/Dashboard/Dashboard';
 import Login from './Pages/Login/Login';
 import Admin from './Pages/Home/Admin/Admin';
 import Register from './Pages/Login/Register/Register';
@@ -21,6 +20,7 @@ import PrivateRoute from './Pages/Login/Login/PrivateRoute/PrivateRoute';
 import NoPage from './Pages/Home/NoPage/NoPage';
 import Booking from './Pages/Products/Booking/Booking';
 import ManageProducts from './Pages/Products/ManageProducts/ManageProducts';
+import Dashboard from './Pages/Dashboard/Dashboard/Dashboard';
 
 function App() {
   return (
@@ -41,14 +41,14 @@ function App() {
             <Route exact path="/services">
               <Services />
             </Route>
-            <Route exact path="/booking/:productId">
+            <PrivateRoute exact path="/booking/:productId">
               <Booking />
-            </Route>
+            </PrivateRoute>
             <Route exact path="/manageProducts">
               <ManageProducts />
             </Route>
             <Route exact path="/dashboard">
-              <Dashboard />
+            <Dashboard></Dashboard>
             </Route>
             <Route exact path="/about">
               <About />
