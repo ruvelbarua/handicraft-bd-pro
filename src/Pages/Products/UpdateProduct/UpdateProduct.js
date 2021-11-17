@@ -9,7 +9,6 @@ const UpdateProduct = () => {
     const [singleProduct, setSingleProduct] = useState({});
     const { register, reset, handleSubmit, formState: { errors } } = useForm();
 
-
     const onSubmit = (data) => {
         console.log(data);
 
