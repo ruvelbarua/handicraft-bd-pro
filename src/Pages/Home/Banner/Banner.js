@@ -1,9 +1,51 @@
 import React from 'react';
+import Box from '@mui/material/Box';
+import Paper from '@mui/material/Paper';
+import Grid from '@mui/material/Grid';
+import bgimg1 from '../../../images/about/bgimg.jpg';
+import bgimg2 from '../../../images/about/bhrs.png';
+import { Button, Container, Typography } from '@mui/material';
+import { style, width } from '@mui/system';
+import { red } from '@mui/material/colors';
+
+// const verticalCenter = {
+//     display: 'flex',
+//     alignItems: 'center',
+//     height: 400,
+// }
 
 const Banner = () => {
+    const style = {
+        miniHeight: 500,
+        height: '100vh',
+        display: 'flex',
+        alignItems: 'center',
+        background: `url(${bgimg1})`
+    }
+
     return (
-        <div>
-            <h2>This is Banner</h2>
+        <div style={style}>
+            <Container>
+                <Grid container spacing={2} sx={{ alignItems: 'center' }}>
+                    <Grid item xs={12} sm={12} lg={6}>
+                        <Box>
+                            <Typography variant="h3" sx={{ color: "#581845 " }}>
+                                HANDICRAFT BD <br />
+                                START HEAR
+                            </Typography>
+                            <Typography variant="h6" sx={{ my: 2, fontSize: 13, fontWeight: 300, color: '#2C0208 ' }}>
+                                WORLD CLASS HANDICRAFT PRODUCTS BY NOW IN OUR WEBSITE.
+                            </Typography>
+                            <Button variant="contained" style={{ backgroundColor: '#17E6D0 ' }}>Visit More</Button>
+
+                        </Box>
+                    </Grid>
+                    <Grid item xs={12} md={6} lg={6}>
+                        <img src={bgimg2} alt="" width="100%" />
+                    </Grid>
+
+                </Grid>
+            </Container>
         </div>
     );
 };

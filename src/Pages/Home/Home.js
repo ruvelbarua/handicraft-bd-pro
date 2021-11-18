@@ -1,16 +1,13 @@
 import React from 'react';
-import ImgSlider from '../Dashboard/ImgSlider/ImgSlider';
 import Contact from '../Login/Contact/Contact';
 import Register from '../Login/Register/Register';
-
-import About from './About/About';
+import Banner from './Banner/Banner';
 import Services from './Services/Services';
 
 const Home = () => {
     return (
         <div>
-            <ImgSlider></ImgSlider>
-            <About></About>
+            <Banner></Banner>
             <Services></Services>
             <Register></Register>
             <Contact></Contact>
