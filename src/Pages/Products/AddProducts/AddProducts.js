@@ -8,7 +8,7 @@ const AddProducts = () => {
     } = useForm();
 
     const onSubmit = (data) => {
-        fetch('http://localhost:5000/addproducts', {
+        fetch('https://dashboard.heroku.com/addproducts', {
             method: "POST",
             headers: { "content-type": "application/json" },
             body: JSON.stringify(data),
