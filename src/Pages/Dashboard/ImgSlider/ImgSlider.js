@@ -1,6 +1,6 @@
 import React from 'react';
 import { Carousel } from 'react-bootstrap';
-import Simg1 from '../../../images/Banner/bbg.jpg';
+import Simg1 from '../../../images/Banner/bbg.png';
 import Simg2 from '../../../images/Banner/bbgs.jpg';
 import Simg3 from '../../../images/Banner/bcrd.jpg';
 import Simg4 from '../../../images/Banner/bhr.jpg';

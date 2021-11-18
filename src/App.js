@@ -20,6 +20,7 @@ import NoPage from './Pages/Home/NoPage/NoPage';
 import Booking from './Pages/Products/Booking/Booking';
 import ManageProducts from './Pages/Products/ManageProducts/ManageProducts';
 import Dashboard from './Pages/Dashboard/Dashboard/Dashboard';
+import Services from './Pages/Home/Services/Services';
 
 function App() {
   return (
@@ -33,6 +34,9 @@ function App() {
             </Route>
             <Route exact path="/home">
               <Home />
+            </Route>
+            <Route exact path="/services">
+              <Services />
             </Route>
             <Route exact path="/products">
               <Products />
