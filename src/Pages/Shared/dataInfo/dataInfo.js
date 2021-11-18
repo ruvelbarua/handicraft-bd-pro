@@ -9,7 +9,7 @@ export const infoData = [
         Icon: AddIcCallIcon,
         email: 'handicraftbd@gmail.com',
         call: '4442',
-        background: '#11175A '
+        background: '#A1D5D3 '
     },
     {
         title: 'OUR LOCATION',
@@ -17,7 +17,7 @@ export const infoData = [
         Icon: AddLocationIcon,
         email: 'handicraftbd@gmail.com',
         call: '4442',
-        background: '#0B5008'
+        background: '#B4D5A1'
     },
     {
         title: 'OPENING HOUR',
@@ -25,6 +25,6 @@ export const infoData = [
         Icon: AccessTimeIcon,
         email: 'handicraftbd@gmail.com',
         call: '4442',
-        background: '#494D02'
+        background: '#A1D5D3'
     }
 ]

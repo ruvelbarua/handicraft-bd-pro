@@ -17,7 +17,7 @@ import { red } from '@mui/material/colors';
 const Banner = () => {
     const style = {
         miniHeight: 500,
-        height: '100vh',
+        height: '80vh',
         display: 'flex',
         alignItems: 'center',
         background: `url(${bgimg1})`
