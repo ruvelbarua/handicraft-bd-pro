@@ -28,7 +28,7 @@ const Banner = () => {
                             <Typography variant="body1" sx={{ my: 2, fontSize: 18, fontWeight: 300, color: '#2C0208 ' }}>
                                 WORLD CLASS HANDICRAFT PRODUCTS BY NOW IN OUR WEBSITE.
                             </Typography>
-                            <Link underLine="none" to={`/products`}>
+                            <Link style={{ textDecoration: 'none' }} to={`/products`}>
                                 <Button variant="outline-primary">VSIT MORE</Button>
                             </Link>
                         </Box>

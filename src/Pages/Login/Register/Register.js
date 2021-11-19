@@ -1,4 +1,4 @@
-import { Button, CircularProgress, Container, Grid, TextField, Typography, Alert} from '@mui/material';
+import { Button, CircularProgress, Container, Grid, TextField, Typography, Alert } from '@mui/material';
 import React, { useState } from 'react';
 import { NavLink, useHistory } from 'react-router-dom';
 import useAuth from '../../../contexts/AuthProvider/useAuth';
@@ -70,7 +70,6 @@ const Register = () => {
                             <Button variant="text" sx={{ color: "#0BA714" }}>Already Registered? Click Login </Button>
                         </NavLink>
                     </form>}
-                    <p>---------- or ----------</p>
                     {isLoading && <CircularProgress />}
                     {user?.email && <Alert severity="success">User Created successfully!</Alert>}
                     {authError && <Alert severity="error">{authError}</Alert>}

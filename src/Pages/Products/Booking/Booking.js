@@ -17,7 +17,7 @@ const Booking = () => {
 
     return (
         <div className="my-5 bg-light">
-            <h1>YOUR SELECTD PRODUCT</h1>
+            <h1>YOUR SELECTED PRODUCT</h1>
             <div className="row">
                 <div className="col-md-4 my-5 p-5 bg-light">
                     <div className="text-primary tour-card">
