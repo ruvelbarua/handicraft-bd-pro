@@ -8,7 +8,7 @@ const Booking = () => {
     const [product, setProduct] = useState({})
 
     useEffect(() => {
-        fetch(`https://dashboard.heroku.com/products/${productId}`)
+        fetch(`https://mysterious-reef-83390.herokuapp.com/products/${productId}`)
             .then(res => res.json())
             .then(data => setProduct(data));
     }, [])

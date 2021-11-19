@@ -1,4 +1,4 @@
-import { Button, CircularProgress, Container, Grid, TextField, Typography, Alert } from '@mui/material';
+import { Button, CircularProgress, Container, Grid, TextField, Typography, Alert} from '@mui/material';
 import React, { useState } from 'react';
 import { NavLink, useHistory } from 'react-router-dom';
 import useAuth from '../../../contexts/AuthProvider/useAuth';
@@ -37,7 +37,7 @@ const Register = () => {
                             label="Your Name"
                             name="name"
                             onBlur={handleOnBlur}
-                            variant="standard" />
+                            variant="outlined" />
                         <TextField
                             sx={{ width: '75%', m: 1 }}
                             id="standard-basic"
@@ -45,7 +45,7 @@ const Register = () => {
                             name="email"
                             type="email"
                             onBlur={handleOnBlur}
-                            variant="standard" />
+                            variant="outlined" />
                         <TextField
                             sx={{ width: '75%', m: 1 }}
                             id="standard-basic"
@@ -53,7 +53,7 @@ const Register = () => {
                             type="password"
                             name="password"
                             onBlur={handleOnBlur}
-                            variant="standard" />
+                            variant="outlined" />
                         <TextField
                             sx={{ width: '75%', m: 1 }}
                             id="standard-basic"
@@ -61,20 +61,22 @@ const Register = () => {
                             type="password"
                             name="password2"
                             onBlur={handleOnBlur}
-                            variant="standard" />
+                            variant="outlined" />
 
                         <Button sx={{ width: '75%', m: 1 }} type="submit" variant="contained">Register</Button>
                         <NavLink
                             style={{ textDecoration: 'none' }}
                             to="/login">
-                            <Button variant="text" sx={{ color: "#0BA714" }}>Already Registered? Click Login or Google Sign in</Button>
+                            <Button variant="text" sx={{ color: "#0BA714" }}>Already Registered? Click Login </Button>
                         </NavLink>
                     </form>}
+                    <p>---------- or ----------</p>
                     {isLoading && <CircularProgress />}
                     {user?.email && <Alert severity="success">User Created successfully!</Alert>}
                     {authError && <Alert severity="error">{authError}</Alert>}
                 </Grid>
-                <Grid item sx={{ mt: 8 }} xs={12} md={6}>
+                <Grid item sx={{ mt: 4 }} xs={12} md={6}>
+                    <h4 className="text-danger"><span className="text-success">HANDICRAFT:</span> SHOWPICE</h4>
                     <img style={{ width: '100%' }} src={login} alt="" />
                 </Grid>
             </Grid>

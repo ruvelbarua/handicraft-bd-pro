@@ -6,14 +6,14 @@ const ManageProducts = () => {
     const [products, setProducts] = useState([]);
 
     useEffect(() => {
-        fetch('https://dashboard.heroku.com/products')
+        fetch('https://mysterious-reef-83390.herokuapp.com/products')
             .then(res => res.json())
             .then(data => setProducts(data));
     }, [])
 
     // DELETE DATA LINK
     const handleDelete = (id) => {
-        const url = `https://dashboard.heroku.com/products/${id}`;
+        const url = `https://mysterious-reef-83390.herokuapp.com/products/${id}`;
         fetch(url, {
             method: "DELETE"
         })

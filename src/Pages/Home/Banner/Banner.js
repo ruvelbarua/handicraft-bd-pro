@@ -20,7 +20,7 @@ const Banner = () => {
                 <Grid container spacing={2} sx={{ alignItems: 'center' }}>
                     <Grid item xs={12} sm={12} lg={6}>
                         <Box>
-                            <Typography variant="h4" sx={{ fontWeight: 600, color: "#581845 " }}>
+                            <Typography variant="h4" sx={{ fontWeight: 600, color: "#199507" }}>
                                 HANDICRAFT BD <br />
                                 START HEAR
                             </Typography>

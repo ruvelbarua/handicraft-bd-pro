@@ -40,7 +40,7 @@ export default function ProductOrder({ open, handleClose, name, price, date }) {
             date: date.toLocaleDateString()
         }
         // send to database server
-        fetch('https://dashboard.heroku.com/orderdata', {
+        fetch('https://mysterious-reef-83390.herokuapp.com/orderdata', {
 
             method: 'POST',
             headers: {

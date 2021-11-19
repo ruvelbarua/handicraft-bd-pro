@@ -10,7 +10,7 @@ import Service from '../Service/Service';
 const Services = () => {
     const [products, setProducts] = useState([]);
     useEffect(() => {
-        fetch('https://dashboard.heroku.com/products')
+        fetch('https://mysterious-reef-83390.herokuapp.com/products')
             .then((res) => res.json())
             .then((data) => setProducts(data));
     }, []);

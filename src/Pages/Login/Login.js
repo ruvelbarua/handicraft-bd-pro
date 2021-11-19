@@ -55,16 +55,17 @@ const Login = () => {
                         <NavLink
                             style={{ textDecoration: 'none' }}
                             to="/register">
-                            <Button variant="text" sx={{ color: "#0BA714" }}> New User? Click Register or Google Sign in</Button>
+                            <Button variant="text" sx={{ color: "#0BA714" }}> New User? Click Register</Button>
                         </NavLink>
                         {isLoading && <CircularProgress />}
                         {user?.email && <Alert severity="success">Login successfully!</Alert>}
                         {authError && <Alert severity="error">{authError}</Alert>}
                     </form>
-                    <p>------------------------</p>
+                    <p>---------- or ----------</p>
                     <Button onClick={handleGoogleSignIn} variant="contained">Google Sign In</Button>
                 </Grid>
                 <Grid item sx={{ mt: 8 }} xs={12} md={6}>
+                    <h4 className="text-danger"><span className="text-success">HANDICRAFT:</span> SHOWPICE</h4>
                     <img style={{ width: '100%' }} src={login} alt="" />
                 </Grid>
             </Grid>
