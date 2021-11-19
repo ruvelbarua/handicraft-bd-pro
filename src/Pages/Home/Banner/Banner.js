@@ -4,6 +4,7 @@ import Grid from '@mui/material/Grid';
 import bgimg1 from '../../../images/about/bgimg.jpg';
 import bgimg2 from '../../../images/about/bhrs.png';
 import { Button, Container, Typography } from '@mui/material';
+import { Link } from 'react-router-dom';
 
 const Banner = () => {
     const style = {
@@ -27,7 +28,9 @@ const Banner = () => {
                             <Typography variant="body1" sx={{ my: 2, fontSize: 18, fontWeight: 300, color: '#2C0208 ' }}>
                                 WORLD CLASS HANDICRAFT PRODUCTS BY NOW IN OUR WEBSITE.
                             </Typography>
-                            <Button variant="contained" style={{ backgroundColor: '#17E6D0 ' }}>Visit More</Button>
+                            <Link underLine="none" to={`/products`}>
+                                <Button variant="outline-primary">VSIT MORE</Button>
+                            </Link>
                         </Box>
                     </Grid>
                     <Grid item xs={12} md={6} lg={6}>
