@@ -3,19 +3,17 @@ import { useForm } from "react-hook-form";
 import "./AddProducts.css";
 
 const AddProducts = () => {
-    const { register, reset, handleSubmit,
-        formState: { errors },
-    } = useForm();
+    const { register, reset, handleSubmit } = useForm();
 
     const onSubmit = (data) => {
-        fetch('https://dashboard.heroku.com/addproducts', {
+        fetch('http://localhost:5000/addproducts', {
             method: "POST",
             headers: { "content-type": "application/json" },
             body: JSON.stringify(data),
         })
-            .then((res) => res.json())
-            .then((data) => console.log(data));
-        console.log(reset);
+            .then(res => res.json())
+            .then(data => console.log(data));
+        reset();
     };
 
     return (

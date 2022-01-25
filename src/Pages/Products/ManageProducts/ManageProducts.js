@@ -6,14 +6,14 @@ const ManageProducts = () => {
     const [products, setProducts] = useState([]);
 
     useEffect(() => {
-        fetch('https://dashboard.heroku.com/products')
+        fetch('http://localhost:5000/products')
             .then(res => res.json())
             .then(data => setProducts(data));
     }, [])
 
     // DELETE DATA LINK
     const handleDelete = (id) => {
-        const url = `https://dashboard.heroku.com/products/${id}`;
+        const url = `http://localhost:5000/products/${id}`;
         fetch(url, {
             method: "DELETE"
         })

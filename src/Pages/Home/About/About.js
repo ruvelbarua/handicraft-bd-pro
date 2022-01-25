@@ -4,12 +4,13 @@ import MuButton from '../../Shared/StyleComponent/MuButton/MuButton';
 import { Grid } from '@mui/material';
 import Typography from '@mui/material/Typography';
 import imge from '../../../images/about/crafts.jpeg';
+import InfoCard from '../../Shared/StyleComponent/InfoCard/InfoCard';
 
 
 const About = () => {
     return (
         <div className="mt-5">
-            <h1 className="mb-5 text-primary">WELCOME</h1>
+            <h1 className="mb-5 text-primary">ABOUT US</h1>
             <div style={{ minHeight: 300, display: 'flex' }}>
                 <Container style={{ alignItems: 'center' }}>
                     <Grid container spacing={2} sx={{ alignItems: 'center' }}>
@@ -31,6 +32,9 @@ const About = () => {
                     </Grid>
                 </Container>
             </div>
+            <Grid sx={{ my: 5 }}>
+                <InfoCard></InfoCard>
+            </Grid>
         </div >
     );
 };

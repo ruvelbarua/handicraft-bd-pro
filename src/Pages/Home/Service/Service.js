@@ -11,7 +11,7 @@ const Service = (props) => {
     const { _id, name, price, description, img } = props.product;
     return (
         <Grid item xs={4} sm={4} md={4}>
-            <Card sx={{ minWidth: 275, border: 0, background: "#DEF3E0", boxShadow: 0 }}>
+            <Card sx={{ minWidth: 275, border: 0, background: "#DEF3E0", boxShadow: 2 }}>
                 <CardMedia
                     component="img"
                     style={{ width: '100%', height: '280px', margin: '0 auto' }}

@@ -1,18 +1,18 @@
 import React from 'react';
-import Contact from '../Login/Contact/Contact';
-import Register from '../Login/Register/Register';
+// import Header from '../Dashboard/Header/Header';
+// import Contact from '../Login/Contact/Contact';
 import Banner from './Banner/Banner';
+import Reviews from './Reviews/Reviews';
 import Services from './Services/Services';
-import InfoCard from '../Shared/StyleComponent/InfoCard/InfoCard';
+
 
 const Home = () => {
     return (
         <div>
+            {/* <Header /> */}
             <Banner></Banner>
-            <InfoCard></InfoCard>
             <Services></Services>
-            <Register></Register>
-            <Contact></Contact>
+            <Reviews></Reviews>
         </div>
     );
 };

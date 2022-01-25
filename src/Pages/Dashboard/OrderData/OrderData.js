@@ -13,7 +13,7 @@ const OrderData = () => {
     const [orders, setOrders] = useState([]);
 
     useEffect(() => {
-        const url = `https://dashboard.heroku.com/orders?email=${user.email}`;
+        const url = `http://localhost:5000/orders?email=${user.email}`;
         fetch(url)
             .then(res => res.json())
             .then(data => setOrders(data));

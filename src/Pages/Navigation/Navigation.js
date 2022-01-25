@@ -92,7 +92,7 @@ export default function Navigation() {
                             <MenuIcon />
                         </IconButton>
                         <Typography className={navLogo} component="div" sx={{ flexGrow: 1 }}>
-                            <img src={logo} alt="" width="25%" />
+                            <img src={logo} alt="" width="30%" />
                         </Typography>
                         <Box className={navItemContainer}>
                             <Link className={navItem} to="/"><Button sx={{ color: "#FAF9F3" }} color="inherit">

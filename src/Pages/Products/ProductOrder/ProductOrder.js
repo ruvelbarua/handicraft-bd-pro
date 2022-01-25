@@ -40,7 +40,7 @@ export default function ProductOrder({ open, handleClose, name, price, date }) {
             date: date.toLocaleDateString()
         }
         // send to database server
-        fetch('https://dashboard.heroku.com/orderdata', {
+        fetch('http://localhost:5000/orderdata', {
 
             method: 'POST',
             headers: {
@@ -53,8 +53,6 @@ export default function ProductOrder({ open, handleClose, name, price, date }) {
                 console.log(data)
                 handleClose();
             })
-
-
         e.preventDefault();
     }
 

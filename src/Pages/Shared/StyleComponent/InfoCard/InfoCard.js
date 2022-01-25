@@ -5,7 +5,7 @@ import { infoData } from '../../dataInfo/dataInfo';
 
 const InfoCard = () => {
     return (
-        <div className="my-3">
+        <div className="">
             <Container>
                 <Grid container spacing={2} style={{ height: 250 }}>
                     {

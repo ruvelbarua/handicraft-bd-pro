@@ -1,4 +1,4 @@
-import React from 'react';
+import * as React from 'react';
 import PropTypes from 'prop-types';
 import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
@@ -6,23 +6,32 @@ import CssBaseline from '@mui/material/CssBaseline';
 import Divider from '@mui/material/Divider';
 import Drawer from '@mui/material/Drawer';
 import IconButton from '@mui/material/IconButton';
-import InboxIcon from '@mui/icons-material/MoveToInbox';
-import List from '@mui/material/List';
-import ListItem from '@mui/material/ListItem';
-import ListItemIcon from '@mui/material/ListItemIcon';
-import ListItemText from '@mui/material/ListItemText';
-import MailIcon from '@mui/icons-material/Mail';
 import MenuIcon from '@mui/icons-material/Menu';
 import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
-import { Grid } from '@mui/material';
-import Calender from '../../Products/Calender/Calender';
+import Button from '@mui/material/Button';
+
+// Link Data From v5.reactrouter.com
+import {
+    BrowserRouter as Router,
+    Switch,
+    Route,
+    Link,
+    useRouteMatch
+} from "react-router-dom";
+import DashBoardHome from '../DashBoardHome/DashBoardHome';
+import AddOrder from '../AddOrder/AddOrder';
+import MakeAdmin from '../MakeAdmin/MakeAdmin';
+// import AdminRoute from '../../Login/AdminRoute/AdminRoute';
 
 const drawerWidth = 180;
 
 function Dashboard(props) {
     const { window } = props;
     const [mobileOpen, setMobileOpen] = React.useState(false);
+
+    // Link router
+    let { path, url } = useRouteMatch();
 
     const handleDrawerToggle = () => {
         setMobileOpen(!mobileOpen);
@@ -32,16 +41,10 @@ function Dashboard(props) {
         <div>
             <Toolbar />
             <Divider />
-            <List>
-                {['Inbox', 'Starred', 'Send email', 'Drafts'].map((text, index) => (
-                    <ListItem button key={text}>
-                        <ListItemIcon>
-                            {index % 2 === 0 ? <InboxIcon /> : <MailIcon />}
-                        </ListItemIcon>
-                        <ListItemText primary={text} />
-                    </ListItem>
-                ))}
-            </List>
+            <Link to="/"><Button color="inherit">Home</Button></Link><br />
+            <Link to={`${url}`}><Button color="inherit">Dashboard</Button></Link>
+            <Link to={`${url}/addOrder`}><Button color="inherit">AddOrder</Button></Link>
+            <Link to={`${url}/makeAdmin`}><Button color="inherit">MakeAdmin</Button></Link>
         </div>
     );
 
@@ -108,20 +111,17 @@ function Dashboard(props) {
                 sx={{ flexGrow: 1, p: 3, width: { sm: `calc(100% - ${drawerWidth}px)` } }}
             >
                 <Toolbar />
-                <Typography paragraph>
-                    <Grid container spacing={2}>
-                        <Grid item xs={12} sm={5}>
-                            <Calender>
-
-                            </Calender>
-                        </Grid>
-                        <Grid item xs={12} sm={7}>
-                            <h4>PRODUCTS BOOKING DATA</h4>
-                            <h5>Working dedelopments....</h5>
-                        </Grid>
-                    </Grid>
-
-                </Typography>
+                <Switch>
+                    <Route exact path={path}>
+                        <DashBoardHome></DashBoardHome>
+                    </Route>
+                    <Route path={`${path}/addOrder`}>
+                        <AddOrder></AddOrder>
+                    </Route>
+                    <Route path={`${path}/makeAdmin`}>
+                        <MakeAdmin></MakeAdmin>
+                    </Route>
+                </Switch>
 
             </Box>
         </Box>
