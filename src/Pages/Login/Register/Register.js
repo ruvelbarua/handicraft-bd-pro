@@ -33,14 +33,14 @@ const Register = () => {
                     {!isLoading && <form onSubmit={handleLoginSubmit}>
                         <TextField
                             sx={{ width: '75%', m: 1 }}
-                            id="standard-basic"
+                            id="outlined-basic"
                             label="Your Name"
                             name="name"
                             onBlur={handleOnBlur}
                             variant="outlined" />
                         <TextField
                             sx={{ width: '75%', m: 1 }}
-                            id="standard-basic"
+                            id="outlined-basic"
                             label="Your Email"
                             name="email"
                             type="email"
@@ -48,7 +48,7 @@ const Register = () => {
                             variant="outlined" />
                         <TextField
                             sx={{ width: '75%', m: 1 }}
-                            id="standard-basic"
+                            id="outlined-basic"
                             label="Your Password"
                             type="password"
                             name="password"
@@ -56,7 +56,7 @@ const Register = () => {
                             variant="outlined" />
                         <TextField
                             sx={{ width: '75%', m: 1 }}
-                            id="standard-basic"
+                            id="outlined-basic"
                             label="Confirm Password"
                             type="password"
                             name="password2"
@@ -67,10 +67,10 @@ const Register = () => {
                         <NavLink
                             style={{ textDecoration: 'none' }}
                             to="/login">
-                            <Button variant="text" sx={{ color: "#0BA714" }}>Already Registered? Click Login</Button>
+                            <Button variant="text" sx={{ color: "#E2031E" }}>Already Registered? Click Login</Button>
                         </NavLink>
                     </form>}
-                    <p>========== OR ==========</p>
+
                     {isLoading && <CircularProgress />}
                     {user?.email && <Alert severity="success">User Created successfully!</Alert>}
                     {authError && <Alert severity="error">{authError}</Alert>}

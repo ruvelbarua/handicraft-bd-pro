@@ -32,37 +32,39 @@ const Login = () => {
         <Container>
             <Grid container spacing={2}>
                 <Grid item sx={{ mt: 8 }} xs={12} md={6}>
-                    <Typography variant="h3" color="#07615D " gutterBottom>PLEASE LOGIN</Typography>
+                    <Typography sx={{ bgcolor: 'success.main' }} variant="h4" gutterBottom>LOGIN PAGE</Typography>
+                    <hr />
                     <span>*New user please registration first.</span>
                     <form onSubmit={handleLoginSubmit}>
                         <TextField
                             sx={{ width: '75%', m: 1 }}
-                            id="standard-basic"
+                            id="outlined-basic"
                             label="Your Email"
                             name="email"
                             onChange={handleOnChange}
-                            variant="standard" />
+                            variant="outlined" />
                         <TextField
                             sx={{ width: '75%', m: 1 }}
-                            id="standard-basic"
+                            id="outlined-basic"
                             label="Your Password"
                             type="password"
                             name="password"
                             onChange={handleOnChange}
-                            variant="standard" />
+                            variant="outlined" />
 
-                        <Button sx={{ width: '75%', m: 1 }} type="submit" variant="contained">Login</Button>
+                        <Button sx={{ width: '35%', m: 1 }} type="submit" variant="contained">Login</Button>
+                        <br />
                         <NavLink
                             style={{ textDecoration: 'none' }}
                             to="/register">
-                            <Button variant="text" sx={{ color: "#0BA714" }}> New User? Click Register</Button>
+                            <Button variant="text" sx={{ color: "#E22C03" }}> New User? Click Register</Button>
                         </NavLink>
                         {isLoading && <CircularProgress />}
                         {user?.email && <Alert severity="success">Login successfully!</Alert>}
                         {authError && <Alert severity="error">{authError}</Alert>}
                     </form>
                     <p>========== OR ==========</p>
-                    <Button onClick={handleGoogleSignIn} variant="contained">Google Sign In</Button>
+                    <Button onClick={handleGoogleSignIn} variant="contained">Google Signin</Button>
                 </Grid>
                 <Grid item sx={{ mt: 8 }} xs={12} md={6}>
                     <img style={{ width: '100%' }} src={login} alt="" />
