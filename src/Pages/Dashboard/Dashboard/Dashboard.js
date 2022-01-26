@@ -22,6 +22,7 @@ import {
 import DashBoardHome from '../DashBoardHome/DashBoardHome';
 import AddOrder from '../AddOrder/AddOrder';
 import MakeAdmin from '../MakeAdmin/MakeAdmin';
+import useAuth from '../../../contexts/AuthProvider/useAuth';
 // import AdminRoute from '../../Login/AdminRoute/AdminRoute';
 
 const drawerWidth = 180;
@@ -32,7 +33,7 @@ function Dashboard(props) {
 
     // Link router
     let { path, url } = useRouteMatch();
-
+    const { admin } = useAuth();
     const handleDrawerToggle = () => {
         setMobileOpen(!mobileOpen);
     };
@@ -43,8 +44,10 @@ function Dashboard(props) {
             <Divider />
             <Link to="/"><Button color="inherit">Home</Button></Link><br />
             <Link to={`${url}`}><Button color="inherit">Dashboard</Button></Link>
-            <Link to={`${url}/addOrder`}><Button color="inherit">AddOrder</Button></Link>
-            <Link to={`${url}/makeAdmin`}><Button color="inherit">MakeAdmin</Button></Link>
+            {admin && <Box>
+                <Link to={`${url}/addOrder`}><Button color="inherit">AddOrder</Button></Link>
+                <Link to={`${url}/makeAdmin`}><Button color="inherit">MakeAdmin</Button></Link>
+            </Box>}
         </div>
     );
 
@@ -122,7 +125,6 @@ function Dashboard(props) {
                         <MakeAdmin></MakeAdmin>
                     </Route>
                 </Switch>
-
             </Box>
         </Box>
     );
