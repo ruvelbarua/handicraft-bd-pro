@@ -32,7 +32,7 @@ const Login = () => {
         <Container>
             <Grid container spacing={2}>
                 <Grid item sx={{ mt: 8 }} xs={12} md={6}>
-                    <Typography sx={{ bgcolor: 'success.main' }} variant="h4" gutterBottom>LOGIN PAGE</Typography>
+                    <Typography sx={{ bgcolor: 'text.disabled', color: '#004d40' }} variant="h4" gutterBottom>LOGIN PAGE</Typography>
                     <hr />
                     <span>*New user please registration first.</span>
                     <form onSubmit={handleLoginSubmit}>

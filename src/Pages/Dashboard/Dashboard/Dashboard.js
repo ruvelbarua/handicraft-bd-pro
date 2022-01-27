@@ -13,7 +13,6 @@ import Button from '@mui/material/Button';
 
 // Link Data From v5.reactrouter.com
 import {
-    BrowserRouter as Router,
     Switch,
     Route,
     Link,
@@ -23,7 +22,7 @@ import DashBoardHome from '../DashBoardHome/DashBoardHome';
 import AddOrder from '../AddOrder/AddOrder';
 import MakeAdmin from '../MakeAdmin/MakeAdmin';
 import useAuth from '../../../contexts/AuthProvider/useAuth';
-// import AdminRoute from '../../Login/AdminRoute/AdminRoute';
+import AdminRoute from '../../Login/AdminRoute/AdminRoute';
 
 const drawerWidth = 180;
 
@@ -118,12 +117,12 @@ function Dashboard(props) {
                     <Route exact path={path}>
                         <DashBoardHome></DashBoardHome>
                     </Route>
-                    <Route path={`${path}/addOrder`}>
+                    <AdminRoute path={`${path}/addOrder`}>
                         <AddOrder></AddOrder>
-                    </Route>
-                    <Route path={`${path}/makeAdmin`}>
+                    </AdminRoute>
+                    <AdminRoute path={`${path}/makeAdmin`}>
                         <MakeAdmin></MakeAdmin>
-                    </Route>
+                    </AdminRoute>
                 </Switch>
             </Box>
         </Box>
