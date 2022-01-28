@@ -7,7 +7,7 @@ import './UpdateProduct.css';
 const UpdateProduct = () => {
     const { productId } = useParams();
     const [singleProduct, setSingleProduct] = useState({});
-    const { register, reset, handleSubmit, formState: { errors } } = useForm();
+    const { register, reset, handleSubmit } = useForm();
 
     const onSubmit = (data) => {
         console.log(data);
@@ -26,7 +26,7 @@ const UpdateProduct = () => {
         fetch(`http://localhost:5000/singleProduct/${productId}`)
             .then((res) => res.json())
             .then((data) => setSingleProduct(data));
-    }, []);
+    }, [productId]);
     return (
 
         <div className="update-product my-5">

@@ -5,7 +5,6 @@ import bgimg1 from '../../../images/about/bgimg.jpg';
 import bgimg2 from '../../../images/about/bhrs.png';
 import { Button, Container, Typography } from '@mui/material';
 import { Link } from 'react-router-dom';
-import { borders } from '@mui/system';
 
 const Banner = () => {
     const style = {

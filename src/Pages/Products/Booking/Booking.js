@@ -2,18 +2,8 @@ import { Button, Link } from '@mui/material';
 import React, { useEffect, useState } from 'react';
 import { Form } from 'react-bootstrap';
 import { useParams } from 'react-router';
-// import Imagelogo from '../../../images/about/bhrs.png'
-import { styled } from '@mui/material/styles';
 import Box from '@mui/material/Box';
-import Paper from '@mui/material/Paper';
 import Grid from '@mui/material/Grid';
-
-/*const Item = styled(Paper)(({ theme }) => ({
-    ...theme.typography.body2,
-    padding: theme.spacing(1),
-    textAlign: 'center',
-    color: theme.palette.text.secondary,
-}));*/
 
 const Booking = () => {
     const { productId } = useParams();
@@ -23,7 +13,7 @@ const Booking = () => {
         fetch(`http://localhost:5000/products/${productId}`)
             .then(res => res.json())
             .then(data => setProduct(data));
-    }, [])
+    }, [productId])
 
     // ON SUBMIT PRODUCT
 
@@ -42,8 +32,6 @@ const Booking = () => {
                         <div className="text-success">
                             <h3>PRODUCT DETAILS</h3>
                         </div>
-                        {/* <img src={product.img} alt="" />
-                        <h4 className="text-place"> {product.name}</h4> */}
                         <p>Product: {product.name}</p>
                         <p>Color: {product.description}</p>
                         <p>Total Price: {product.price}</p>
@@ -58,34 +46,6 @@ const Booking = () => {
                 </Grid>
             </Grid>
         </Box>
-
-        // <div className="my-5 container-fluied">
-        //     <h1>YOUR SELECTD PRODUCT</h1>
-        //     <div className="row">
-        //         <div className="col-md-4 my-5 p-5 bg-light">
-        //             <div className="text-primary tour-card">
-        //                 <h2>HANDICRAFT BD PRODUCTS</h2>
-        //                 <img src={Imagelogo} alt="" />
-        //             </div>
-        //         </div>
-        //         <div className="col-md-8">
-        //             <Form>
-        //                 <div className="text-success">
-        //                     <h3>PRODUCT DETAILS</h3>
-        //                 </div>
-        //                 <img src={product.img} alt="" />
-        //                 <h4 className="text-place"> {product.name}</h4>
-        //                 <h3>Product: {product.description}</h3>
-        //                 <h5>Total Price: {product.price}</h5>
-        //                 <p>Special Discount:</p>
-        //                 <p className="text-success">
-        //                     Buy minimum 8 peces then you gain price 10% discount.
-        //                 </p>
-        //                 <Button onClick="" variant="contained">Add to Card</Button>
-        //             </Form>
-        //         </div>
-        //     </div>
-        // </div>
     );
 };
 

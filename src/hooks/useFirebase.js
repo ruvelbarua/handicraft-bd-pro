@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import initializeFirebase from "../Pages/Login/Login/Firebase/firebase.init";
-import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword, GoogleAuthProvider, signInWithPopup, signOut, updateProfile, onAuthStateChanged, getIdToken } from "firebase/auth";
+import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword, GoogleAuthProvider, signInWithPopup, signOut, updateProfile, onAuthStateChanged } from "firebase/auth";
+// getIdToken
 
 // initalize firebase app
 initializeFirebase();
@@ -10,7 +11,7 @@ const useFirebase = () => {
     const [isLoading, setIsLoading] = useState(true);
     const [authError, setAuthError] = useState('');
     const [admin, setAdmin] = useState(false);
-    const [token, setToken] = useState('');
+    // const [token, setToken] = useState('');
 
     const auth = getAuth();
     const googleProvider = new GoogleAuthProvider();
@@ -71,24 +72,22 @@ const useFirebase = () => {
 
     // Observe User State
     useEffect(() => {
-        const unsubscribe = onAuthStateChanged(auth, (user) => {
+        const unsubscribed = onAuthStateChanged(auth, (user) => {
             if (user) {
                 setUser(user);
-
-                // Get User IdToken
-                getIdToken(user)
-                    .then(idToken => {
-                        setToken(idToken)
-                    })
+                // ----Get User IdToken
+                // getIdToken(user)
+                //     .then(idToken => {
+                //         setToken(idToken);
+                //     })
                 // -----
-
             } else {
                 setUser({})
             }
             setIsLoading(false);
         });
-        return () => unsubscribe;
-    }, [])
+        return () => unsubscribed;
+    }, [auth])
 
     // Email Cheack
     useEffect(() => {
@@ -126,7 +125,7 @@ const useFirebase = () => {
     return {
         user,
         isLoading,
-        token,
+        // token,
         authError,
         admin,
         registerUser,
