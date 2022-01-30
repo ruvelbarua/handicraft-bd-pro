@@ -13,7 +13,7 @@ const Contact = () => {
             border: 0,
             outline: 0,
             width: '100%',
-            height: 150,
+            height: 70,
             margin: '20px 0',
             borderRadius: 3,
             fontFamily: 'inherit',

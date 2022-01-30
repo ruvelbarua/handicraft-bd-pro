@@ -7,19 +7,7 @@ import { makeStyles } from '@mui/styles';
 import logo from '../../../images/logo/logo5.png'
 import logo2 from '../../../images/logo/ssl.png'
 
-// const useStyle = makeStyles({
-//     socialIcon: {
-//         color: '#19D3AE !important',
-//         border: '1px solid #19D3AE !important',
-//         '&:hover': {
-//             background: '#19D3AE !important',
-//             color: '#fff !important'
-//         }
-//     }
-// })
-
 const Footer = () => {
-    // const { socialIcon } = useStyle();
     const useStyle = makeStyles({
         root: {
             background: '#04121E',
@@ -30,7 +18,7 @@ const Footer = () => {
             border: 0,
             outline: 0,
             width: '100%',
-            height: 150,
+            height: 90,
             margin: '20px 0',
             borderRadius: 3,
             fontFamily: 'inherit',
@@ -46,7 +34,6 @@ const Footer = () => {
                 <div className={root}>
                     <div className="my-5">
                         <Container>
-
                             <Grid container marginTop={4} marginBottom={10} sx={{ textAlign: "center", color: "#fff", width: "100%" }}>
                                 <Grid item xs={12} sm={12} md={6} lg={3}>
                                     <List sx={{ mt: 4 }}>
@@ -76,13 +63,13 @@ const Footer = () => {
                                 <Grid item sx={{ color: "#fff", mt: 4 }} xs={12} sm={12} md={6} lg={3}>
                                     <ListItemText >We Accept: </ListItemText>
                                     <Typography className="" component="div" sx={{ flexGrow: 1 }}>
-                                        <img src={logo2} alt="" width="80%" />
+                                        <img src={logo2} alt="" width="60%" />
                                     </Typography>
                                 </Grid>
                                 <Grid item xs={12} sm={12} md={6} lg={3} sx={{ mt: 4 }}>
                                     <ListItemText >Company Logo </ListItemText>
                                     <Typography className="" component="div" sx={{ flexGrow: 1 }}>
-                                        <img src={logo} alt="" width="80%" />
+                                        <img src={logo} alt="" width="70%" />
                                     </Typography>
                                 </Grid>
                             </Grid>

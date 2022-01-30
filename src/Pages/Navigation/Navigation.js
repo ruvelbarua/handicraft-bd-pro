@@ -106,7 +106,7 @@ export default function Navigation() {
                                 ABOUT
                             </Button></Link>
                             <Link className={navItem} to="/users"><Button sx={{ color: "#FAF9F3" }} color="inherit">
-                                USERS
+                                MyOrders
                             </Button></Link>
                         </Box>
                         {

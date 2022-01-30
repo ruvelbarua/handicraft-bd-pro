@@ -27,7 +27,7 @@ const Banner = () => {
                                 HANDICRAFT BD START HEAR
                             </Typography>
                             <Typography variant="body1" sx={{ my: 2, fontSize: 20, fontWeight: 500, color: '#2C0208 ' }}>
-                                Our all products made by hand and modern technology. Company strongly ensure make good quality services. we are export around the world.
+                                Our all products made by "Hand" and "Modern Technology Machine". Company allways ensure make good quality services. Client satifaction is our first priority. we are export around the world. So visit and order now.
                             </Typography>
                             <Link underLine="none" to={`/products`}>
                                 <Button style={{ width: '40%', fontSize: 20 }} variant="contained">VSIT MORE</Button>
