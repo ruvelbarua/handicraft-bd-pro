@@ -8,7 +8,7 @@ import TableHead from '@mui/material/TableHead';
 import TableRow from '@mui/material/TableRow';
 import Paper from '@mui/material/Paper';
 
-const OrderData = () => {
+const MyOrders = () => {
     const { user } = useAuth();
     const [orders, setOrders] = useState([]);
 
@@ -20,7 +20,7 @@ const OrderData = () => {
     }, [])
     return (
         <div>
-            <h2>User Data: {orders.length}</h2>
+            <h2>My Total Order: {orders.length}</h2>
             <TableContainer component={Paper}>
                 <Table sx={{}} aria-label="Orders Data">
                     <TableHead>
@@ -53,4 +53,4 @@ const OrderData = () => {
     );
 };
 
-export default OrderData;
+export default MyOrders;

@@ -3,8 +3,10 @@ import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
 import Modal from '@mui/material/Modal';
 import { TextField } from '@mui/material';
-import MuButton from '../../Shared/StyleComponent/MuButton/MuButton';
+
 import useAuth from '../../../contexts/AuthProvider/useAuth';
+import MuButton from '../../Shared/StyleComponent/MuButton/MuButton';
+
 
 const style = {
     position: 'absolute',

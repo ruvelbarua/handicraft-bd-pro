@@ -24,6 +24,8 @@ import useAuth from '../../../contexts/AuthProvider/useAuth';
 import AdminRoute from '../../Login/AdminRoute/AdminRoute';
 import AddProducts from '../AddProducts/AddProducts';
 import ManageProducts from '../ManageProducts/ManageProducts';
+import MyOrders from '../MyOrders/MyOrders';
+
 
 const drawerWidth = 180;
 
@@ -44,6 +46,7 @@ function Dashboard(props) {
             <Divider />
             <Link to="/"><Button color="inherit">Home</Button></Link><br />
             <Link to={`${url}`}><Button color="inherit">Dashboard</Button></Link>
+            <Link to={`${url}/myOrders`}><Button color="inherit">MyOrders</Button></Link>
             <Link to={`${url}/manageProducts`}><Button color="inherit">ManageProducts</Button></Link>
             {admin && <Box>
                 <Link to={`${url}/addproducts`}><Button color="inherit">AddProducts</Button></Link>
@@ -118,6 +121,9 @@ function Dashboard(props) {
                 <Switch>
                     <Route exact path={path}>
                         <DashBoardHome></DashBoardHome>
+                    </Route>
+                    <Route path={`${path}/myOrders`}>
+                        <MyOrders></MyOrders>
                     </Route>
                     <Route path={`${path}/manageProducts`}>
                         <ManageProducts></ManageProducts>

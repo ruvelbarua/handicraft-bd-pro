@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { Grid } from '@mui/material';
 import Calender from '../../Products/Calender/Calender';
-import ProductOrder from '../../Products/ProductOrder/ProductOrder';
+import ProductOrder from '../ProductOrder/ProductOrder';
 
 const DashboardHome = () => {
     const [date, setDate] = React.useState(new Date())
