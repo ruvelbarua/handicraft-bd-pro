@@ -1,6 +1,6 @@
 import React from 'react';
-import AddProducts from '../../Products/AddProducts/AddProducts';
-import ManageProducts from '../../Products/ManageProducts/ManageProducts';
+import AddProducts from '../../Dashboard/AddProducts/AddProducts';
+import ManageProducts from '../../Dashboard/ManageProducts/ManageProducts';
 import UpdateProduct from '../../Products/UpdateProduct/UpdateProduct';
 
 const Admin = () => {

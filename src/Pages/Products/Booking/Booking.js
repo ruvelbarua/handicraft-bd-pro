@@ -40,8 +40,6 @@ const Booking = () => {
                             Buy minimum 8 peces then you gain price 10% discount.
                         </p>
                         <Button onClick="" variant="contained">Add to Card</Button>
-                        <Link href="/home">
-                            <Button variant="contained">HOME</Button></Link>
                     </Form>
                 </Grid>
             </Grid>

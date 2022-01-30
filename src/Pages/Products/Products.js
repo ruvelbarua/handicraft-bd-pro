@@ -7,7 +7,6 @@ const Products = () => {
         <div>
             <ImgSlider></ImgSlider>
             <Services></Services>
-
         </div>
     );
 };

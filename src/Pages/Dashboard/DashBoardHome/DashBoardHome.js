@@ -16,6 +16,7 @@ const DashboardHome = () => {
             </Grid>
             <Grid item xs={12} sm={7}>
                 <h4>PRODUCTS BOOKING DATA</h4>
+                <h5>Updating this process...</h5>
                 <ProductOrder date={date}></ProductOrder>
 
             </Grid>

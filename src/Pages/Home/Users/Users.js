@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import Booking from '../../Products/Booking/Booking';
-import ManageProducts from '../../Products/ManageProducts/ManageProducts';
+import ManageProducts from '../../Dashboard/ManageProducts/ManageProducts';
 import ProductBanner from '../../Products/ProductBanner/ProductBanner';
 import ProductOrder from '../../Products/ProductOrder/ProductOrder';
 
