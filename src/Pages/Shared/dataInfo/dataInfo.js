@@ -1,30 +1,45 @@
-import AddLocationIcon from '@mui/icons-material/AddLocation';
-import AccessTimeIcon from '@mui/icons-material/AccessTime';
-import AddIcCallIcon from '@mui/icons-material/AddIcCall';
 
 export const infoData = [
     {
-        title: 'CONTACT US',
-        description: 'ABC Tower, Agrabad, Ctg.',
-        Icon: AddIcCallIcon,
-        email: 'handicraftbd@gmail.com',
-        call: '4442',
+        title: 'CHAN HUA',
+        description: '"Handicraft Products" are very nice.',
+        image: "https://ibb.co/PxGHD94",
+        email: 'chanhua@gmail.com',
         background: '#A1D5D3 '
     },
     {
-        title: 'OUR LOCATION',
-        description: 'ABC Tower, Agrabad, Ctg.',
-        Icon: AddLocationIcon,
-        email: 'handicraftbd@gmail.com',
-        call: '4442',
-        background: '#B4D5A1'
+        title: 'DAVID FRANK',
+        description: 'Realy good quality "Handicraft Products".',
+        image: "https://ibb.co/7XrTFTS",
+        email: 'davidfrank@gmail.com',
+        background: '#A1D5D3 '
     },
     {
-        title: 'OPENING HOUR',
-        description: 'Open 8am to 10pm everyday.',
-        Icon: AccessTimeIcon,
-        email: 'handicraftbd@gmail.com',
-        call: '4442',
-        background: '#A1D5D3'
+        title: 'ADAM SMIT',
+        description: 'Awasome Products. I like it',
+        image: "https://ibb.co/sg9JZnb",
+        email: 'adam smit@gmail.com',
+        background: '#A1D5D3 '
+    },
+    {
+        title: 'RUHUL AMIN',
+        description: 'Realy good quality "Handicraft Products".',
+        image: "https://ibb.co/DthKMc7",
+        email: 'ruhulamin@gmail.com',
+        background: '#A1D5D3 '
+    },
+    {
+        title: 'SABRINA',
+        description: 'Awasome Products. I like it',
+        image: "https://ibb.co/bWnp0wx",
+        email: 'sabrina@gmail.com',
+        background: '#A1D5D3 '
+    },
+    {
+        title: 'SAIFUL ISLAM',
+        description: 'Awasome Products. I like it',
+        image: "https://ibb.co/qNjyrQY",
+        email: 'saifulislam@gmail.com',
+        background: '#A1D5D3 '
     }
 ]

@@ -7,7 +7,7 @@ import Simg4 from '../../../images/Banner/bhr.jpg';
 import Simg5 from '../../../images/Banner/bhrs.png';
 import Simg6 from '../../../images/Banner/bpil1.jpg';
 import Simg7 from '../../../images/Banner/wallpic.jpg';
-import Simg8 from '../../../images/Banner/logo2.png';
+
 
 const ImgSlider = () => {
     return (
@@ -103,16 +103,6 @@ const ImgSlider = () => {
                             <h2>HANDICRAFT BD</h2>
                             <h5>Best Products in Bangladesh</h5>
                         </div>
-                    </Carousel.Caption>
-                </Carousel.Item>
-                <Carousel.Item interval={2000}>
-                    <img
-                        className="d-block w-100"
-                        src={Simg8}
-                        alt="Third slide"
-                    />
-                    <Carousel.Caption>
-
                     </Carousel.Caption>
                 </Carousel.Item>
             </Carousel>

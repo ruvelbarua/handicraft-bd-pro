@@ -30,7 +30,7 @@ const UpdateProduct = () => {
     return (
 
         <div className="update-product my-5">
-            <h2 className="fontdesign">PLEASE UPDATE YOUR DATA</h2>
+            <h2 className="fontdesign">UPDATE YOUR PRODUCT</h2>
             <form onSubmit={handleSubmit(onSubmit)}>
                 <input defaultValue={singleProduct.name} {...register("name", { required: true, maxLength: 18 })} placeholder="Product Name" />
                 <input defaultValue={singleProduct.price} {...register("price")} placeholder="Price" />
