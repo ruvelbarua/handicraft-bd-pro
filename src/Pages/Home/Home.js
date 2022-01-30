@@ -1,8 +1,8 @@
 import React from 'react';
-// import Header from '../Dashboard/Header/Header';
-// import Contact from '../Login/Contact/Contact';
+import Contact from '../Login/Contact/Contact';
+import InfoCard from '../Shared/StyleComponent/InfoCard/InfoCard';
 import Banner from './Banner/Banner';
-import Reviews from './Reviews/Reviews';
+// import Reviews from './Reviews/Reviews';
 import Services from './Services/Services';
 
 
@@ -12,7 +12,9 @@ const Home = () => {
             {/* <Header /> */}
             <Banner></Banner>
             <Services></Services>
-            <Reviews></Reviews>
+            <InfoCard></InfoCard>
+            {/* <Reviews></Reviews> */}
+            <Contact></Contact>
         </div>
     );
 };

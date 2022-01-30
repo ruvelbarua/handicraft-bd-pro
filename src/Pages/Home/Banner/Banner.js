@@ -35,7 +35,7 @@ const Banner = () => {
                         </Box>
                     </Grid>
                     <Grid item xs={12} md={6} lg={6}>
-                        <Box sx={{ borderRadius: 15 }}>
+                        <Box sx={{ borderRadius: 25 }}>
                             <img src={bgimg2} alt="" width="70%" />
                         </Box>
                     </Grid>
