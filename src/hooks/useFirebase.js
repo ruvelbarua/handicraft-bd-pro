@@ -46,6 +46,7 @@ const useFirebase = () => {
         signInWithEmailAndPassword(auth, email, password)
             .then((userCredential) => {
                 const destination = location?.state?.from || '/';
+                setUser(userCredential.user);
                 history.replace(destination);
                 setAuthError('');
             })
@@ -119,7 +120,6 @@ const useFirebase = () => {
         })
             .then()
     }
-
 
     // Return part
     return {

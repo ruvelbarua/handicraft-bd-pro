@@ -10,8 +10,8 @@ const Users = () => {
         <div>
             <ProductBanner date={date} setDate={setDate} />
             <Booking date={date} />
-            <ProductOrder></ProductOrder>
-            <ManageProducts></ManageProducts>
+            {/* <ProductOrder></ProductOrder>
+            <ManageProducts></ManageProducts> */}
         </div>
     );
 };

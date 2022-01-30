@@ -120,6 +120,9 @@ function Dashboard(props) {
                     <AdminRoute path={`${path}/addOrder`}>
                         <AddOrder></AddOrder>
                     </AdminRoute>
+                    <AdminRoute path={`${path}/addOrder`}>
+                        <AddOrder></AddOrder>
+                    </AdminRoute>
                     <AdminRoute path={`${path}/makeAdmin`}>
                         <MakeAdmin></MakeAdmin>
                     </AdminRoute>

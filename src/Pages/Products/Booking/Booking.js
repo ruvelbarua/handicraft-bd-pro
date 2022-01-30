@@ -8,12 +8,12 @@ import Grid from '@mui/material/Grid';
 const Booking = () => {
     const { productId } = useParams();
     const [product, setProduct] = useState({})
-
+    console.log(productId)
     useEffect(() => {
         fetch(`http://localhost:5000/products/${productId}`)
             .then(res => res.json())
             .then(data => setProduct(data));
-    }, [productId])
+    }, [])
 
     // ON SUBMIT PRODUCT
 

@@ -3,6 +3,8 @@ import React, { useState } from 'react';
 import { NavLink, useLocation, useHistory } from 'react-router-dom';
 import { Grid } from '@mui/material';
 import login from '../../images/bigpot.jpg';
+import GroupIcon from '@mui/icons-material/Group';
+import GoogleIcon from '@mui/icons-material/Google';
 import useAuth from '../../contexts/AuthProvider/useAuth';
 
 
@@ -52,7 +54,7 @@ const Login = () => {
                             onChange={handleOnChange}
                             variant="outlined" />
 
-                        <Button sx={{ width: '35%', m: 1 }} type="submit" variant="contained">Login</Button>
+                        <Button sx={{ width: '35%', m: 1 }} type="submit" variant="contained"> <h3><GroupIcon /></h3>  Login</Button>
                         <br />
                         <NavLink
                             style={{ textDecoration: 'none' }}
@@ -64,7 +66,8 @@ const Login = () => {
                         {authError && <Alert severity="error">{authError}</Alert>}
                     </form>
                     <p>========== OR ==========</p>
-                    <Button onClick={handleGoogleSignIn} variant="contained">Google Signin</Button>
+                    <Button onClick={handleGoogleSignIn} variant="contained"><h3><GoogleIcon /></h3>
+                        Google Signin</Button>
                 </Grid>
                 <Grid item sx={{ mt: 8 }} xs={12} md={6}>
                     <img style={{ width: '100%' }} src={login} alt="" />

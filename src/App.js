@@ -18,11 +18,9 @@ import Users from './Pages/Home/Users/Users';
 import PrivateRoute from './Pages/Login/Login/PrivateRoute/PrivateRoute';
 import NoPage from './Pages/Home/NoPage/NoPage';
 import Booking from './Pages/Products/Booking/Booking';
-// import ManageProducts from './Pages/Products/ManageProducts/ManageProducts';
 import Dashboard from './Pages/Dashboard/Dashboard/Dashboard';
 import Services from './Pages/Home/Services/Services';
-// import ProductBooking from './Pages/Products/ProductBooking/ProductBooking';
-// import MyProducts from './Pages/Products/MyProducts/MyProducts';
+
 
 function App() {
   return (
@@ -43,28 +41,19 @@ function App() {
             <Route exact path="/products">
               <Products />
             </Route>
-            <PrivateRoute exact path="/booking/:productId">
+            <PrivateRoute path="/booking/:productId">
               <Booking />
             </PrivateRoute>
-            {/* <Route exact path="/manageProducts">
-              <ManageProducts />
-            </Route>
-            <Route exact path="/myProducts">
-              <MyProducts />
-            </Route>
-            <Route exact path="/productBooking">
-              <ProductBooking />
-            </Route> */}
             <PrivateRoute path="/dashboard">
               <Dashboard></Dashboard>
             </PrivateRoute>
             <Route exact path="/about">
               <About />
             </Route>
-            <PrivateRoute exact path="/users">
+            <PrivateRoute path="/users">
               <Users />
             </PrivateRoute>
-            <PrivateRoute exact path="/admin">
+            <PrivateRoute path="/admin">
               <Admin />
             </PrivateRoute>
             <Route exact path="/login">
@@ -73,7 +62,7 @@ function App() {
             <Route exact path="/register">
               <Register />
             </Route>
-            <Route exact path="*">
+            <Route path="*">
               <NoPage />
             </Route>
           </Switch>

@@ -14,12 +14,11 @@ import List from '@mui/material/List';
 import Divider from '@mui/material/Divider';
 import ListItem from '@mui/material/ListItem';
 import ListItemText from '@mui/material/ListItemText';
-import logo from '../../images/logo/logo2.png'
+import mainlogo from '../../images/logo/logo5.png';
 import useAuth from '../../contexts/AuthProvider/useAuth';
 
 export default function Navigation() {
     const { user, logOut } = useAuth();
-    // <Box sx={{ flexGrow: 1 }}>
     const theme = useTheme()
     const useStyle = makeStyles({
         navItem: {
@@ -91,8 +90,10 @@ export default function Navigation() {
                         >
                             <MenuIcon />
                         </IconButton>
-                        <Typography className={navLogo} component="div" sx={{ flexGrow: 1 }}>
-                            <img src={logo} alt="" width="30%" />
+                        <Typography className={navLogo} component="div"
+                            sx={{ flexGrow: 1, color: '#F9EE0A', fontSize: 25 }}>
+                            <img src={mainlogo} alt="" width="10%" />
+                            HANDICRAFTBD
                         </Typography>
                         <Box className={navItemContainer}>
                             <Link className={navItem} to="/"><Button sx={{ color: "#FAF9F3" }} color="inherit">
@@ -106,9 +107,6 @@ export default function Navigation() {
                             </Button></Link>
                             <Link className={navItem} to="/users"><Button sx={{ color: "#FAF9F3" }} color="inherit">
                                 USERS
-                            </Button></Link>
-                            <Link className={navItem} to="/admin"><Button sx={{ color: "#FAF9F3" }} color="inherit">
-                                ADMIN
                             </Button></Link>
                         </Box>
                         {

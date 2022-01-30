@@ -5,8 +5,6 @@ import Container from '@mui/material/Container';
 import Typography from '@mui/material/Typography';
 import Service from '../Service/Service';
 
-
-
 const Services = () => {
     const [products, setProducts] = useState([]);
     useEffect(() => {
