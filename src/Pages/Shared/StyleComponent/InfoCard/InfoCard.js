@@ -6,7 +6,7 @@ import { infoData } from '../../dataInfo/dataInfo';
 const InfoCard = () => {
     return (
         <div className="container my-5">
-            <Container style={{ height: 550 }}><hr />
+            <Container style={{ height: 600 }}><hr />
                 <Typography variant="h4" component="div" sx={{ fontWeight: 500, m: 2, color: "#070C6A " }}>
                     OUR CUSTOMERS SAYS
                 </Typography><hr />
