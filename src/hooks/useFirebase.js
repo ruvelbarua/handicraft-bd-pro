@@ -92,7 +92,7 @@ const useFirebase = () => {
 
     // Email Cheack
     useEffect(() => {
-        fetch(`https://mysterious-reef-83390.herokuapp.com/users/${user.email}`)
+        fetch(`http://localhost:5000/users/${user.email}`)
             .then(res => res.json())
             .then(data => setAdmin(data.admin))
     }, [user.email])
@@ -111,7 +111,7 @@ const useFirebase = () => {
     // Connect to database
     const saveUser = (email, displayName, method) => {
         const user = { email, displayName };
-        fetch(`https://mysterious-reef-83390.herokuapp.com/users`, {
+        fetch(`http://localhost:5000/users`, {
             method: method,
             headers: {
                 'content-type': 'application/json'

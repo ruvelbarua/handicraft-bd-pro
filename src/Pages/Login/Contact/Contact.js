@@ -25,7 +25,7 @@ const Contact = () => {
     return (
         <div className={root}>
             <div className="my-5">
-                <Container maxWidth="md">
+                <Container style={{ height: 350 }}>
                     <Typography variant="h4" color="#13C824">Contact Us</Typography>
                     <Typography variant="h6" color="#fff">Please Submit Your Comments</Typography>
                     <TextField

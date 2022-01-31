@@ -7,10 +7,10 @@ import pic6 from '../../../images/review/p6.jpg'
 export const infoData = [
     {
         title: 'CHAN HUA',
-        description: '"Handicraft Products" are very nice.',
+        description: 'All the products is very beautiful.',
         image: pic1,
         email: 'chanhua@gmail.com',
-        background: '#A1D5D3 '
+        background: '#FF5733 '
     },
     {
         title: 'DAVID FRANK',
@@ -24,7 +24,7 @@ export const infoData = [
         description: 'Awasome Products. I like it',
         image: pic3,
         email: 'adam smit@gmail.com',
-        background: '#A1D5D3 '
+        background: '#FFC300 '
     },
     {
         title: 'RUHUL AMIN',
@@ -35,14 +35,14 @@ export const infoData = [
     },
     {
         title: 'SABRINA',
-        description: 'Awasome Products. I like it',
+        description: 'My favourite product.',
         image: pic5,
         email: 'sabrina@gmail.com',
-        background: '#A1D5D3 '
+        background: '#FF5733 '
     },
     {
         title: 'SAIFUL ISLAM',
-        description: 'Awasome Products. I like it',
+        description: 'Cost & Quality Awasome. I like it',
         image: pic6,
         email: 'saifulislam@gmail.com',
         background: '#A1D5D3 '

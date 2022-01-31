@@ -19,7 +19,7 @@ const About = () => {
                                 HANDICRAFT BD PRODUCTS
                             </Typography>
                             <Typography style={{ fontSize: 20, textAlign: 'justify' }} sx={{ lineHeight: 2, my: 3 }}>
-                                Handicraft is a world wide femous natural beauty home and officeal required products. Basicaly, Bangladeshi made products is a best choice in the world. Our company ensure export quality product. Every items are mantain best services. So, visit our best products and order now.Thank you.
+                                Handicraft is a world wide famous beautiful home and official required products. Company always maintain good quality production since 1998. We have more the 150 items and 350 employee. Others, our products export 20 countries in the world. So, visit our website and contact now.Thank you.
                             </Typography>
                         </Grid>
                         <Grid item xs={12} sm={12} md={6} lg={6}>

@@ -13,7 +13,7 @@ const UpdateProduct = () => {
         console.log(data);
 
         // Product Update Link
-        fetch(`https://mysterious-reef-83390.herokuapp.com/update/${productId}`, {
+        fetch(`http://localhost:5000/update/${productId}`, {
             method: "PUT",
             headers: { "content-type": "application/json" },
             body: JSON.stringify(data),
@@ -23,7 +23,7 @@ const UpdateProduct = () => {
     };
     // Single Product Link
     useEffect(() => {
-        fetch(`https://mysterious-reef-83390.herokuapp.com/singleProduct/${productId}`)
+        fetch(`http://localhost:5000/singleProduct/${productId}`)
             .then((res) => res.json())
             .then((data) => setSingleProduct(data));
     }, [productId]);
