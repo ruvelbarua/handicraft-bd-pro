@@ -7,8 +7,8 @@ const InfoCard = () => {
     return (
         <div className="container my-5">
             <Container style={{ height: 650 }}><hr />
-                <Typography variant="h4" component="div" sx={{ fontWeight: 600, m: 5, color: "#070C6A " }}>
-                    OUR CLIENTS REVIEW
+                <Typography variant="h3" component="div" sx={{ fontWeight: 600, m: 5, color: "#070C6A " }}>
+                    What our customers are saying
                 </Typography><hr />
                 <Grid container spacing={2} style={{ height: 250 }}>
                     {

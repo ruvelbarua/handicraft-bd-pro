@@ -91,9 +91,9 @@ export default function Navigation() {
                             <MenuIcon />
                         </IconButton>
                         <Typography className={navLogo} component="div"
-                            sx={{ flexGrow: 1, color: '#F9EE0A', fontSize: 25 }}>
-                            <img src={mainlogo} alt="" width="10%" />
-                            HANDICRAFTBD
+                            sx={{ flexGrow: 1, color: '#F9EE0A', fontSize: 15 }}>
+                            <img src={mainlogo} alt="" width="12%" />
+                            HANDICRAFTSBD
                         </Typography>
                         <Box className={navItemContainer}>
                             <Link className={navItem} to="/"><Button sx={{ color: "#FAF9F3" }} color="inherit">
@@ -122,7 +122,7 @@ export default function Navigation() {
                                     <Button sx={{ color: '#C11611' }} color="inherit">Login</Button>
                                 </Link>
                         }
-
+                        <p>{user?.email}</p>
                     </Toolbar>
                 </AppBar>
             </Box>

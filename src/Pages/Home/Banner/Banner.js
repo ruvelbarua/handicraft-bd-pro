@@ -23,8 +23,8 @@ const Banner = () => {
                 <Grid container spacing={2} sx={{ alignItems: 'center' }} style={style}>
                     <Grid item xs={12} sm={12} lg={6}>
                         <Box>
-                            <Typography variant="h4" sx={{ fontWeight: 600, color: "#126E05" }}>
-                                HANDICRAFT BD START HEAR
+                            <Typography variant="h3" sx={{ fontWeight: 500, color: "#126E05" }}>
+                                HANDICRAFTSBD START HEAR
                             </Typography>
                             <Typography variant="body1" sx={{ my: 2, fontSize: 20, fontWeight: 500, color: '#2C0208 ' }}>
                                 Our all products made by "Hand" and "Modern Technology Machine". Company allways ensure make good quality services. Client satifaction is our first priority. we are export around the world. So visit and order now.
