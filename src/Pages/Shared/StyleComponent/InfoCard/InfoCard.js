@@ -18,7 +18,7 @@ const InfoCard = () => {
 
                                 <div>
                                     <Typography className="" component="div" sx={{ flexGrow: 1 }}>
-                                        <img src={image} alt="" width="20%" />
+                                        <img src={image} alt="" width="40%" />
                                     </Typography>
                                     <Typography variant="body1">{title}</Typography>
                                     <Typography variant="subtitle1">{description}</Typography>
