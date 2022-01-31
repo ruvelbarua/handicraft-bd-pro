@@ -10,7 +10,7 @@ const ProductBooking = ({ date }) => {
 
     const [getproducts, setGetProducts] = useState([]);
     useEffect(() => {
-        fetch('http://localhost:5000/products')
+        fetch('https://mysterious-reef-83390.herokuapp.com/products')
             .then((res) => res.json())
             .then((data) => setGetProducts(data));
     }, []);

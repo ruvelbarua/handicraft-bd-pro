@@ -10,7 +10,7 @@ const Booking = () => {
     const [product, setProduct] = useState({})
     console.log(productId)
     useEffect(() => {
-        fetch(`http://localhost:5000/products/${productId}`)
+        fetch(`https://mysterious-reef-83390.herokuapp.com/products/${productId}`)
             .then(res => res.json())
             .then(data => setProduct(data));
     }, [])
