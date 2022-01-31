@@ -46,7 +46,7 @@ const BookingModal = ({ openBooking, handleBookingClose, booking, date, setBooki
         }
 
         // Send to Database Server products
-        fetch('http://localhost:5000/productorders', {
+        fetch('https://mysterious-reef-83390.herokuapp.com/productorders', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'
