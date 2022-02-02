@@ -4,7 +4,7 @@ import pic3 from '../../../images/review/p3.jpg'
 import pic4 from '../../../images/review/p4.jpg'
 import pic5 from '../../../images/review/p5.jpg'
 import pic6 from '../../../images/review/p6.jpg'
-export const infoData = [
+export const reviews = [
     {
         title: 'CHAN HUA',
         description: 'All the products is very beautiful.',

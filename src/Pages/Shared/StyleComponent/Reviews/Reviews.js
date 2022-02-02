@@ -1,9 +1,8 @@
 import { Container, Grid, Paper, Typography } from '@mui/material';
 import React from 'react';
-import { infoData } from '../../dataInfo/dataInfo';
+import { reviews } from '../../dataInfo/dataInfo';
 
-
-const InfoCard = () => {
+const Reviews = () => {
     return (
         <div className="container my-5">
             <Container style={{ height: 600 }}><hr />
@@ -12,7 +11,7 @@ const InfoCard = () => {
                 </Typography><hr />
                 <Grid container spacing={2}>
                     {
-                        infoData.map(({ image, title, description, email, background }) => <Grid
+                        reviews.map(({ image, title, description, email, background }) => <Grid
                             item xs={12} sm={12} md={4} lg={4}>
                             <Paper variant="outlined" sx={{ display: "flex", justifyContent: "center", p: 2, background: background, color: "#0F2303", height: 210 }}>
                                 <div>
@@ -32,4 +31,4 @@ const InfoCard = () => {
     );
 };
 
-export default InfoCard;
+export default Reviews;

@@ -1,10 +1,9 @@
 import React from 'react';
 import Container from '@mui/material/Container';
-import MuButton from '../../Shared/StyleComponent/MuButton/MuButton';
 import { Grid } from '@mui/material';
 import Typography from '@mui/material/Typography';
 import imge from '../../../images/about/crafts.jpeg';
-import InfoCard from '../../Shared/StyleComponent/InfoCard/InfoCard';
+import Reviews from '../../Shared/StyleComponent/Reviews/Reviews';
 
 
 const About = () => {
@@ -31,7 +30,7 @@ const About = () => {
                 </Container>
             </div>
             <Grid sx={{ my: 5 }}>
-                <InfoCard></InfoCard>
+                <Reviews></Reviews>
             </Grid>
         </div >
     );
